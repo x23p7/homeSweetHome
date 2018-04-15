@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GreyBox\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\GreyBox\Scripts\RoomCam.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/x23p7/Documents/homeSweetHome/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
