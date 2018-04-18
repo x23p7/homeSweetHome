@@ -198,6 +198,113 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &579880331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 579880336}
+  - component: {fileID: 579880335}
+  - component: {fileID: 579880334}
+  - component: {fileID: 579880333}
+  - component: {fileID: 579880332}
+  - component: {fileID: 579880337}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &579880332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30df7c55d627a46479443b2d91b26cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &579880333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1444338c47e5e0949af5b23e9c19c514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &579880334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a6f44cd1b4dbc418251a85ca767131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &579880335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21712ed0a52bc0f44835b5260b7f0b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XboxControles: {fileID: 579880333}
+  KeyBoardControles: {fileID: 579880332}
+  PS4Input: {fileID: 579880334}
+  jumpInputDown: 0
+  jumpInputUp: 0
+  jumpInputStay: 0
+  horizontalInput: 0
+  verticalInput: 0
+  colorWheelHorizontal: 0
+  colorWheelVertical: 0
+  shootInputUp: 0
+  shootInputDown: 0
+  shootInputStay: 0
+  aimInputUp: 0
+  aimInputDown: 0
+  aimInputStay: 0
+--- !u!4 &579880336
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8962394, y: -1.6238222, z: 2.8379226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579880337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579880331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a097c78f23bf1694f82b7dd64d0b2ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCam: {fileID: 1259433366}
+  player: {fileID: 1159958093}
+  rotationSpeed: 3
 --- !u!1001 &768397971
 Prefab:
   m_ObjectHideFlags: 0
@@ -332,6 +439,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec18f7fe9bcff134e824260c719e9a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCam: {fileID: 1259433366}
+  speedForce: 750
+  rotationSpeed: 3
+  maxSpeed: 5
+  kickStart: 1
+  kickStartFactor: 3
+  velocityRotationFollow: 1
+  currentForward: {x: 0, y: 0, z: 0}
 --- !u!54 &1159958098
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -339,13 +454,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159958093}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 60
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1259433363
 GameObject:
