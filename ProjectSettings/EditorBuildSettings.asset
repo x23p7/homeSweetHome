@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/GreyBox/Scenes/test.unity
-    guid: 58a2a1454313c414db287f78cdad9e9b
+    path: Assets/GreyBox/OverShoulder/Scenes/overShoulderCamTest.unity
+    guid: e713c61b75e57cf4381ba46cb9ae86c4
   m_configObjects: {}

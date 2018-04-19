@@ -18,7 +18,7 @@ public class MouseAndKeyBoard : MonoBehaviour {
 		InputManager.instance.horizontalInput = Input.GetAxis ("Horizontal");
 		InputManager.instance.verticalInput = Input.GetAxis ("Vertical");
 		InputManager.instance.cameraHorizontal = Input.GetAxis ("CameraHorizontal");
-		InputManager.instance.cameraVertical = Input.GetAxis ("ColorWheelVertical");
+		InputManager.instance.cameraVertical = Input.GetAxis ("CameraVertical");
 
 		InputManager.instance.shootInputUp = Input.GetKeyUp (KeyCode.Mouse0);
 		InputManager.instance.shootInputDown = Input.GetKeyDown (KeyCode.Mouse0);
