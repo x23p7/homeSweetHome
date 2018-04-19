@@ -16,8 +16,8 @@ public class InputManager : MonoBehaviour {
 
 	public float horizontalInput;
 	public float verticalInput;
-	public float colorWheelHorizontal;
-	public float colorWheelVertical;
+	public float cameraHorizontal;
+	public float cameraVertical;
 
 	public bool shootInputUp;
 	public bool shootInputDown;
@@ -36,7 +36,8 @@ public class InputManager : MonoBehaviour {
 			instance = this;
 		}
 	}
-	void Start () {/*
+	void Start () {
+        if (Input.GetJoystickNames().Length > 0) { 
 		controllerName = Input.GetJoystickNames()[0];
 		if (controllerName == "Controller (XBOX 360 For Windows)") {
 			XboxControles.enabled = true;
@@ -47,15 +48,12 @@ public class InputManager : MonoBehaviour {
 			KeyBoardControles.enabled = false;
 			PS4Input.enabled = true;
 		}
-		else {*/
+        }
+        else {
 			XboxControles.enabled = false;
 			KeyBoardControles.enabled = true;
 			PS4Input.enabled = false;
 
-		//}
-	}
-	
-	// Update is called once per frame
-	void Update () {
+		}
 	}
 }

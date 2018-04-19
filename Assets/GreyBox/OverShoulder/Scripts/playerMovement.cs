@@ -16,11 +16,13 @@ public class playerMovement : MonoBehaviour {
     Vector3 currentVelocity;
     [HideInInspector]
     public Vector3 currentForward;
+    public Vector3 currentRight;
     Rigidbody myRig;
 	// Use this for initialization
 	void Start () {
         myRig = GetComponent<Rigidbody>();
         currentForward = transform.forward;
+        currentRight = transform.right;
 	}
 
     // Update is called once per frame
@@ -33,25 +35,24 @@ public class playerMovement : MonoBehaviour {
 
     private void Move()
     {
-        if (Mathf.Sign(InputManager.instance.verticalInput) != Mathf.Sign(Vector3.Dot(currentVelocity.normalized, currentForward)))
+        /*if (Mathf.Sign(InputManager.instance.verticalInput) != Mathf.Sign(Vector3.Dot(currentVelocity.normalized, currentForward)))
         { // keep this if you want crisp movement controls
             myRig.velocity = new Vector3(0, currentVelocity.y, 0);
-        }
+        }*/
         if (currentVelocity.magnitude < maxSpeed / 10)
         {
 
-            myRig.AddForce(currentForward * speedForce * InputManager.instance.verticalInput * kickStartFactor);
+            myRig.AddForce((currentForward * InputManager.instance.verticalInput + currentRight*InputManager.instance.horizontalInput).normalized * speedForce * kickStartFactor);
 
         }
         else if (currentVelocity.magnitude < maxSpeed)
         {
-            myRig.AddForce(currentForward * speedForce * InputManager.instance.verticalInput);
+            myRig.AddForce((currentForward * InputManager.instance.verticalInput + currentRight * InputManager.instance.horizontalInput).normalized * speedForce);
         }
     }
 
     private void RotateTowardsVelocity()
     {
-        print(Vector3.Lerp(transform.forward, myRig.velocity, velocityRotationFollow) != transform.forward);
         desiredRot.SetLookRotation(Vector3.Lerp(transform.forward, myRig.velocity, velocityRotationFollow));
         transform.rotation = desiredRot;
     }

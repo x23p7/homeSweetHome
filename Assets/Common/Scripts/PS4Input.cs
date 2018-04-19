@@ -17,8 +17,8 @@ public class PS4Input : MonoBehaviour {
 
 		InputManager.instance.horizontalInput = Input.GetAxis ("HorizontalPS4");
 		InputManager.instance.verticalInput = Input.GetAxis ("VerticalPS4");
-		InputManager.instance.colorWheelHorizontal = Input.GetAxis ("ColorWheelHorizontalPS4");
-		InputManager.instance.colorWheelVertical = Input.GetAxis ("ColorWheelVerticalPS4");
+		InputManager.instance.cameraHorizontal = Input.GetAxis ("CameraHorizontalPS4");
+		InputManager.instance.cameraVertical = Input.GetAxis ("CameraVerticalPS4");
 
 		InputManager.instance.shootInputUp = Input.GetKeyUp (KeyCode.JoystickButton5);
 		InputManager.instance.shootInputDown = Input.GetKeyDown (KeyCode.JoystickButton5);

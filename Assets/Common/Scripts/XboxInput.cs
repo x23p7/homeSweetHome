@@ -17,8 +17,8 @@ public sealed class XboxInput : MonoBehaviour {
 
 		InputManager.instance.horizontalInput = Input.GetAxis ("HorizontalXBOX");
 		InputManager.instance.verticalInput = Input.GetAxis ("VerticalXBOX");
-		InputManager.instance.colorWheelHorizontal = Input.GetAxis ("ColorWheelHorizontalXBOX");
-		InputManager.instance.colorWheelVertical = Input.GetAxis ("ColorWheelVerticalXBOX");
+		InputManager.instance.cameraHorizontal = Input.GetAxis ("CameraHorizontalXBOX");
+		InputManager.instance.cameraVertical = Input.GetAxis ("CameraVerticalXBOX");
 
 		InputManager.instance.shootInputUp = Input.GetKeyUp (KeyCode.JoystickButton5);
 		InputManager.instance.shootInputDown = Input.GetKeyDown (KeyCode.JoystickButton5);
