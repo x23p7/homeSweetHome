@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/x23p7/Documents/homeSweetHome Build 190418/homeSweetHome Build 190418.exe
+C:/Users/Uranium/Documents/homeSweetHome Build 200418/homeSweetHome Build 200418.exe
 SceneListBegin?
 Assets/GreyBox/OverShoulder/Scenes/overShoulderCamTest.unity
 SceneListEnd?
@@ -154,4 +154,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 34a8ea798f74f8d5a9064660f2d82422 Assembly-CSharp.dll:.RoomCam
 59c311036fbc87076b5faa6c77025e8d Assembly-CSharp.dll:.PlayerMove
 23072fab5b68be6a315dba65f51e5754 Assembly-CSharp.dll:.playerMovement
-ae5dd49a25a4665c09d99c2726c4ca10 Assembly-CSharp.dll:.CameraController
+6eac1330e02a8917fc4c5eda0f3c794f Assembly-CSharp.dll:.CameraController
