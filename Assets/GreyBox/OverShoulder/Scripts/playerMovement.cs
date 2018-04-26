@@ -16,8 +16,12 @@ public class playerMovement : MonoBehaviour {
     Vector3 currentVelocity;
     [HideInInspector]
     public Vector3 currentForward;
+    [HideInInspector]
     public Vector3 currentRight;
     Rigidbody myRig;
+
+    public Animator myAnim;
+
 	// Use this for initialization
 	void Start () {
         myRig = GetComponent<Rigidbody>();
@@ -28,6 +32,7 @@ public class playerMovement : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
         currentVelocity = myRig.velocity;
+        myAnim.SetFloat("velocity", currentVelocity.magnitude);
         Move();
         RotateTowardsVelocity();
 

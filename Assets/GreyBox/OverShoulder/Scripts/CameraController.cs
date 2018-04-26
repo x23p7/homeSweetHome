@@ -140,14 +140,12 @@ public class CameraController : MonoBehaviour
         }*/
         if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
         {
-            print("closer" + (camBackWall.distance));
             camDistance = Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, maxDistance);
         }
         else
         {
             camDistance = maxDistance;
         }
-        print(camDistance);
         camTrans.position = Vector3.Lerp(camTrans.position,playerHead + camPointer * camDistance, camMoveSmooth);
     }
 
