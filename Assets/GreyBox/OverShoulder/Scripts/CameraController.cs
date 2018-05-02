@@ -33,10 +33,16 @@ public class CameraController : MonoBehaviour
     Vector3 camPos;
     float maxDistance;
     float camDistance;
+    public float camSideCheckDist = 0.5f;
     Vector3 playerPos;
+    List<float> rayHitDist;
+    float centerDist;
+    float lowestDist;
+    public float pentaRayMoreThanLowest;
     // Use this for initialization
     void Start()
     {
+        rayHitDist = new List<float>();
         playerMoveScript = player.GetComponent<playerMovement>();
         playerRig = player.GetComponent<Rigidbody>();
         camTrans = currentCam.transform;
@@ -101,52 +107,58 @@ public class CameraController : MonoBehaviour
     {
         
         camPos = camTrans.position;
-        Debug.DrawRay(playerHead, camPointer * maxDistance, Color.green, 5f);
-        /* if (!Physics.Raycast(camTrans.position, -camTrans.forward, camBackwardsCheckRange + 4*camPushSpeed, camPushMask) && camOffSet.x + camPushSpeed >= camOffSetOrig.x)
-         {
-             camOffSet = new Vector3(camOffSet.x - camPushSpeed, camOffSet.y, camOffSet.z + camPushSpeed);
-         }
-         if (Physics.Raycast(camTrans.position, -camTrans.forward , out camBackWall, camBackwardsCheckRange, camPushMask) && camOffSet.x - camPushSpeed <=0)
-         {
-             if ((camBackWall.point - camTrans.position).magnitude > minCamWallDist)
-             { 
-                 camOffSet = new Vector3(camOffSet.x + camPushSpeed, camOffSet.y, camOffSet.z - camPushSpeed);
-             }
-             else
-             {
-                 camOffSet = new Vector3(camOffSet.x + minCamWallDist - (camBackWall.point - camTrans.position).magnitude, camOffSet.y, camOffSet.z);
-             }
-         }
-         camTrans.position = player.transform.position + camOffSet.x * camTrans.forward + camOffSet.y * camTrans.up + camOffSet.z * camTrans.right;*/
-        /*colls = Physics.OverlapSphere(camPos, minCamWallDist, camPushMask); // overlapsphere um alle collider innerhalb der no-comfort-zone der cam zu erfassen
-        if (colls.Length > 0) {
-            Physics.Raycast(camPos, colls[0].ClosestPoint(camPos) - camPos, out camBackWall, (colls[0].ClosestPoint(camPos) - camPos).magnitude, camPushMask); //colls[0] sollte der zuerst erfasste und damit naheliegendste collider sein
-            distanceVectorDelta = Vector3.Dot(camBackWall.normal * minCamWallDist, camTrans.position - camBackWall.point);
-            cameraHeadVectorDelta = Vector3.Dot(camBackWall.normal * minCamWallDist * distanceVectorDelta, playerHead - camTrans.position);
-            camOffSet += cameraHeadVectorDelta * (playerHead - camTrans.position);
-            print((playerHead - camTrans.position));
-            print("closing in at " + cameraHeadVectorDelta * (playerHead - camTrans.position));
+        rayHitDist.Clear();
+        centerDist = maxDistance;
+        lowestDist = maxDistance;
+        //new
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
+        {
+            rayHitDist.Add(camBackWall.distance - minCamWallDist);
+            centerDist = camBackWall.distance - minCamWallDist;
+        }
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance + camTrans.right*camSideCheckDist, out camBackWall, camPushMask))
+        {
+            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist,0,centerDist));
+        }
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance - camTrans.right * camSideCheckDist, out camBackWall, camPushMask))
+        {
+            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, centerDist));
+        }
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance + camTrans.up * camSideCheckDist, out camBackWall, camPushMask))
+        {
+            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, centerDist));
+        }
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance - camTrans.up * camSideCheckDist, out camBackWall, camPushMask))
+        {
+            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, centerDist));
+        }
+
+        if (rayHitDist.Count > 0)
+        {
+            camDistance = 0;
+            for (int i = rayHitDist.Count; i > 0; i--)
+            {
+                lowestDist = Mathf.Min(lowestDist, rayHitDist[i - 1]);
+                camDistance += rayHitDist[i - 1];
+            }
+            camDistance /= rayHitDist.Count;
+            camDistance = Mathf.Clamp(camDistance, 0, lowestDist * pentaRayMoreThanLowest);
         }
         else
         {
-            colls = Physics.OverlapSphere(camPos, minCamWallDist + camPushSpeed, camPushMask);
-            if (colls.Length == 0) { 
-            if (camOffSet.x - camPushSpeed* XZRatio >= camOffSetOrig.x) { 
-            camOffSet = new Vector3(camOffSet.x - camPushSpeed*XZRatio, camOffSet.y, camOffSet.z + camPushSpeed * (1/XZRatio));
-            print("returning");
-            }
-            }
-
-        }*/
-        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
+            camDistance = Mathf.Lerp(camDistance,maxDistance,camMoveSmooth/5f);
+        }
+        print(rayHitDist.Count);
+        //alt
+        /*if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
         {
             camDistance = Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, maxDistance);
         }
         else
         {
             camDistance = maxDistance;
-        }
+        }*/
         camTrans.position = Vector3.Lerp(camTrans.position,playerHead + camPointer * camDistance, camMoveSmooth);
     }
 
-}
+    }

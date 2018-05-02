@@ -1507,6 +1507,8 @@ MonoBehaviour:
   camUpInputMin: 0.75
   maxXRotation: {x: -40, y: 40}
   XRotReturnSpeed: 0.02
+  camSideCheckDist: 1
+  pentaRayMoreThanLowest: 1.2
 --- !u!1 &615907853
 GameObject:
   m_ObjectHideFlags: 0
