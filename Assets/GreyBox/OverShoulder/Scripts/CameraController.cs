@@ -142,7 +142,7 @@ public class CameraController : MonoBehaviour
                 camDistance += rayHitDist[i - 1];
             }
             camDistance /= rayHitDist.Count;
-            camDistance = Mathf.Clamp(camDistance, 0, lowestDist * pentaRayMoreThanLowest);
+            camDistance = Mathf.Clamp(camDistance, 0, lowestDist * pentaRayMoreThanLowest - minCamWallDist);
         }
         else
         {
@@ -160,5 +160,4 @@ public class CameraController : MonoBehaviour
         }*/
         camTrans.position = Vector3.Lerp(camTrans.position,playerHead + camPointer * camDistance, camMoveSmooth);
     }
-
     }
