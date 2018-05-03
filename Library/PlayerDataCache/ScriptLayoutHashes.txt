@@ -1,8 +1,8 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Uranium/Documents/homeSweetHome Build 260418/homeSweetHome Build 260418.exe
+C:/Users/Uranium/Documents/homeSweetHomeBuild030518/homeSweetHomeBuild030518.exe
 SceneListBegin?
-Assets/GreyBox/OverShoulder/Scenes/overShoulderCamTest.unity
+Assets/GreyBox/OverShoulder/Scenes/missingPersonRoom.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -118,6 +118,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MouseAndKeyBoard
+65b7e2da16155fff3cb344b4f176333d Assembly-CSharp.dll:.DialogueManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -132,6 +133,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+217574e3056b792ed0a94ed18e5f2e8f Assembly-CSharp.dll:.DialogueTrigger
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -154,4 +156,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 34a8ea798f74f8d5a9064660f2d82422 Assembly-CSharp.dll:.RoomCam
 59c311036fbc87076b5faa6c77025e8d Assembly-CSharp.dll:.PlayerMove
 47dadc633be6dfd8a19aecaf1d251eed Assembly-CSharp.dll:.playerMovement
-f4b5b8d2fb4ef3ff618659741b6e0422 Assembly-CSharp.dll:.CameraController
+a79c0a77d11e0c9783ca63bd547e3263 Assembly-CSharp.dll:.CameraController
