@@ -59,6 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Common\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Common\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Common\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Common\Scripts\InputManager.cs" />
     <Compile Include="Assets\Common\Scripts\MouseAndKeyBoard.cs" />
     <Compile Include="Assets\Common\Scripts\PS4Input.cs" />
