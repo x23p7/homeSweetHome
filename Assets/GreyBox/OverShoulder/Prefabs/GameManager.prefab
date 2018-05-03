@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 114045147419487490}
   - component: {fileID: 114376268522400148}
   - component: {fileID: 114690076488102346}
+  - component: {fileID: 114757554760822206}
+  - component: {fileID: 114614492449679638}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -93,6 +95,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30df7c55d627a46479443b2d91b26cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114614492449679638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589571071618716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d26b74cc28867647aa59ca6741337a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114690076488102346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +134,23 @@ MonoBehaviour:
   XRotReturnSpeed: 0.02
   camSideCheckDist: 1
   pentaRayMoreThanLowest: 1.2
+--- !u!114 &114757554760822206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589571071618716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99d2ecd5926f2d8419e5ad3727ba6878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letterDelay: 0.02
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  panelAnim: {fileID: 0}
+  nameAnim: {fileID: 0}
+  dialogueAnim: {fileID: 0}
 --- !u!114 &114802049853707906
 MonoBehaviour:
   m_ObjectHideFlags: 1

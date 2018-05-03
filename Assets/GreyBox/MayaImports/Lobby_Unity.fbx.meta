@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: d1e3864dec86f7148a9e40a37fcdc357
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: chest_geo
+    100002: chest_geo 1
+    100004: group1
+    100006: group2
+    100008: group3
+    100010: head_geo
+    100012: head_geo 1
+    100014: hip_geo
+    100016: hip_geo 1
+    100018: left_ankle_joint_geo
+    100020: left_ankle_joint_geo 1
+    100022: left_foot_geo
+    100024: left_foot_geo 1
+    100026: left_hand_geo
+    100028: left_hand_geo 1
+    100030: left_hand_joint_geo
+    100032: left_hand_joint_geo 1
+    100034: left_hip_joint_geo
+    100036: left_hip_joint_geo 1
+    100038: left_knee_geo
+    100040: left_knee_geo 1
+    100042: left_lower_arm_geo
+    100044: left_lower_arm_geo 1
+    100046: left_lower_leg_geo
+    100048: left_lower_leg_geo 1
+    100050: left_shoulder_joint_geo
+    100052: left_shoulder_joint_geo 1
+    100054: left_upper_arm_geo
+    100056: left_upper_arm_geo 1
+    100058: left_upper_leg_geo
+    100060: left_upper_leg_geo 1
+    100062: //RootNode
+    100064: neck_geo
+    100066: neck_geo 1
+    100068: pCube266
+    100070: pCube306
+    100072: pCube307
+    100074: pCube331
+    100076: pCube334
+    100078: pCube337
+    100080: pCube340
+    100082: pCube342
+    100084: pCube343
+    100086: pCube344
+    100088: pCube345
+    100090: pCube346
+    100092: pCube347
+    100094: pCube348
+    100096: pCube349
+    100098: pCube350
+    100100: pCube351
+    100102: pCube352
+    100104: pCube353
+    100106: pCube354
+    100108: pCube355
+    100110: pCube356
+    100112: pCube479
+    100114: pCube480
+    100116: pCube481
+    100118: pCube482
+    100120: pCube483
+    100122: pCube484
+    100124: pCube485
+    100126: pCube487
+    100128: pCube490
+    100130: pCube501
+    100132: pCube549
+    100134: pCube552
+    100136: pCube553
+    100138: pCube575
+    100140: pCube623
+    100142: pCube624
+    100144: pCube625
+    100146: pCube626
+    100148: pCube646
+    100150: pCube647
+    100152: pCube648
+    100154: pCube649
+    100156: pCube650
+    100158: pCube651
+    100160: pCube652
+    100162: pCube653
+    100164: pCube654
+    100166: pCube655
+    100168: pCube656
+    100170: pCube657
+    100172: pCube658
+    100174: pCube659
+    100176: pCube660
+    100178: pCube661
+    100180: pCube662
+    100182: pCube663
+    100184: pCube664
+    100186: pCube665
+    100188: pCube666
+    100190: pCube667
+    100192: pCube668
+    100194: pCube669
+    100196: pCube706
+    100198: pCube707
+    100200: pCube708
+    100202: pCube712
+    100204: pCube714
+    100206: pCube728
+    100208: pCube732
+    100210: pCube738
+    100212: pCube740
+    100214: pCube745
+    100216: pCube746
+    100218: pCube748
+    100220: pCube769
+    100222: pCube785
+    100224: pCube786
+    100226: pCube816
+    100228: pCube817
+    100230: pCube818
+    100232: pCube819
+    100234: pCube820
+    100236: pCube821
+    100238: pCube826
+    100240: pCube827
+    100242: pCube840
+    100244: pCube841
+    100246: pCube842
+    100248: pCube843
+    100250: pCube854
+    100252: pCube856
+    100254: pCube865
+    100256: pCube866
+    100258: pCube867
+    100260: pCube868
+    100262: pCube869
+    100264: pCube872
+    100266: pCube873
+    100268: pCube874
+    100270: pCube875
+    100272: pCube876
+    100274: pCube877
+    100276: pCube878
+    100278: pCube879
+    100280: pCube888
+    100282: pCube889
+    100284: pCube890
+    100286: pCube891
+    100288: pCube892
+    100290: pCube893
+    100292: pCube894
+    100294: pCube895
+    100296: pCube896
+    100298: pCube897
+    100300: pCube898
+    100302: pCube899
+    100304: pCube900
+    100306: pCube901
+    100308: pCube902
+    100310: pCube903
+    100312: pCube904
+    100314: pCube905
+    100316: pCube906
+    100318: pCube907
+    100320: pCube908
+    100322: pCube909
+    100324: pCube918
+    100326: pCube919
+    100328: pCube920
+    100330: pCube921
+    100332: pCube922
+    100334: pCube923
+    100336: pCube924
+    100338: pCube925
+    100340: pCube926
+    100342: pCube927
+    100344: pCube928
+    100346: pCube929
+    100348: pCylinder37
+    100350: polySurface100
+    100352: polySurface101
+    100354: polySurface102
+    100356: polySurface103
+    100358: polySurface104
+    100360: polySurface105
+    100362: polySurface106
+    100364: polySurface111
+    100366: polySurface123
+    100368: polySurface124
+    100370: polySurface125
+    100372: polySurface126
+    100374: polySurface127
+    100376: polySurface59
+    100378: polySurface60
+    100380: polySurface63
+    100382: polySurface64
+    100384: polySurface65
+    100386: polySurface66
+    100388: polySurface67
+    100390: polySurface68
+    100392: polySurface69
+    100394: polySurface74
+    100396: polySurface75
+    100398: polySurface78
+    100400: polySurface79
+    100402: polySurface80
+    100404: polySurface81
+    100406: polySurface82
+    100408: polySurface83
+    100410: polySurface84
+    100412: polySurface85
+    100414: polySurface86
+    100416: polySurface87
+    100418: polySurface88
+    100420: polySurface89
+    100422: polySurface90
+    100424: polySurface91
+    100426: polySurface92
+    100428: polySurface93
+    100430: polySurface95
+    100432: proxy_character_geo
+    100434: proxy_character_geo 1
+    100436: right_ankle_geo
+    100438: right_ankle_geo 1
+    100440: right_foot_geo
+    100442: right_foot_geo 1
+    100444: right_hand_geo
+    100446: right_hand_geo 1
+    100448: right_hand_joint_geo
+    100450: right_hand_joint_geo 1
+    100452: right_hip_joint_geo
+    100454: right_hip_joint_geo 1
+    100456: right_knee_geo
+    100458: right_knee_geo 1
+    100460: right_lower_arm_geo
+    100462: right_lower_arm_geo 1
+    100464: right_lower_leg_geo
+    100466: right_lower_leg_geo 1
+    100468: right_shoulder_joint_geo
+    100470: right_shoulder_joint_geo 1
+    100472: right_upper_arm_geo
+    100474: right_upper_arm_geo 1
+    100476: right_upper_leg_geo
+    100478: right_upper_leg_geo 1
+    100480: sessel
+    100482: waist_geo
+    100484: waist_geo 1
+    400000: chest_geo
+    400002: chest_geo 1
+    400004: group1
+    400006: group2
+    400008: group3
+    400010: head_geo
+    400012: head_geo 1
+    400014: hip_geo
+    400016: hip_geo 1
+    400018: left_ankle_joint_geo
+    400020: left_ankle_joint_geo 1
+    400022: left_foot_geo
+    400024: left_foot_geo 1
+    400026: left_hand_geo
+    400028: left_hand_geo 1
+    400030: left_hand_joint_geo
+    400032: left_hand_joint_geo 1
+    400034: left_hip_joint_geo
+    400036: left_hip_joint_geo 1
+    400038: left_knee_geo
+    400040: left_knee_geo 1
+    400042: left_lower_arm_geo
+    400044: left_lower_arm_geo 1
+    400046: left_lower_leg_geo
+    400048: left_lower_leg_geo 1
+    400050: left_shoulder_joint_geo
+    400052: left_shoulder_joint_geo 1
+    400054: left_upper_arm_geo
+    400056: left_upper_arm_geo 1
+    400058: left_upper_leg_geo
+    400060: left_upper_leg_geo 1
+    400062: //RootNode
+    400064: neck_geo
+    400066: neck_geo 1
+    400068: pCube266
+    400070: pCube306
+    400072: pCube307
+    400074: pCube331
+    400076: pCube334
+    400078: pCube337
+    400080: pCube340
+    400082: pCube342
+    400084: pCube343
+    400086: pCube344
+    400088: pCube345
+    400090: pCube346
+    400092: pCube347
+    400094: pCube348
+    400096: pCube349
+    400098: pCube350
+    400100: pCube351
+    400102: pCube352
+    400104: pCube353
+    400106: pCube354
+    400108: pCube355
+    400110: pCube356
+    400112: pCube479
+    400114: pCube480
+    400116: pCube481
+    400118: pCube482
+    400120: pCube483
+    400122: pCube484
+    400124: pCube485
+    400126: pCube487
+    400128: pCube490
+    400130: pCube501
+    400132: pCube549
+    400134: pCube552
+    400136: pCube553
+    400138: pCube575
+    400140: pCube623
+    400142: pCube624
+    400144: pCube625
+    400146: pCube626
+    400148: pCube646
+    400150: pCube647
+    400152: pCube648
+    400154: pCube649
+    400156: pCube650
+    400158: pCube651
+    400160: pCube652
+    400162: pCube653
+    400164: pCube654
+    400166: pCube655
+    400168: pCube656
+    400170: pCube657
+    400172: pCube658
+    400174: pCube659
+    400176: pCube660
+    400178: pCube661
+    400180: pCube662
+    400182: pCube663
+    400184: pCube664
+    400186: pCube665
+    400188: pCube666
+    400190: pCube667
+    400192: pCube668
+    400194: pCube669
+    400196: pCube706
+    400198: pCube707
+    400200: pCube708
+    400202: pCube712
+    400204: pCube714
+    400206: pCube728
+    400208: pCube732
+    400210: pCube738
+    400212: pCube740
+    400214: pCube745
+    400216: pCube746
+    400218: pCube748
+    400220: pCube769
+    400222: pCube785
+    400224: pCube786
+    400226: pCube816
+    400228: pCube817
+    400230: pCube818
+    400232: pCube819
+    400234: pCube820
+    400236: pCube821
+    400238: pCube826
+    400240: pCube827
+    400242: pCube840
+    400244: pCube841
+    400246: pCube842
+    400248: pCube843
+    400250: pCube854
+    400252: pCube856
+    400254: pCube865
+    400256: pCube866
+    400258: pCube867
+    400260: pCube868
+    400262: pCube869
+    400264: pCube872
+    400266: pCube873
+    400268: pCube874
+    400270: pCube875
+    400272: pCube876
+    400274: pCube877
+    400276: pCube878
+    400278: pCube879
+    400280: pCube888
+    400282: pCube889
+    400284: pCube890
+    400286: pCube891
+    400288: pCube892
+    400290: pCube893
+    400292: pCube894
+    400294: pCube895
+    400296: pCube896
+    400298: pCube897
+    400300: pCube898
+    400302: pCube899
+    400304: pCube900
+    400306: pCube901
+    400308: pCube902
+    400310: pCube903
+    400312: pCube904
+    400314: pCube905
+    400316: pCube906
+    400318: pCube907
+    400320: pCube908
+    400322: pCube909
+    400324: pCube918
+    400326: pCube919
+    400328: pCube920
+    400330: pCube921
+    400332: pCube922
+    400334: pCube923
+    400336: pCube924
+    400338: pCube925
+    400340: pCube926
+    400342: pCube927
+    400344: pCube928
+    400346: pCube929
+    400348: pCylinder37
+    400350: polySurface100
+    400352: polySurface101
+    400354: polySurface102
+    400356: polySurface103
+    400358: polySurface104
+    400360: polySurface105
+    400362: polySurface106
+    400364: polySurface111
+    400366: polySurface123
+    400368: polySurface124
+    400370: polySurface125
+    400372: polySurface126
+    400374: polySurface127
+    400376: polySurface59
+    400378: polySurface60
+    400380: polySurface63
+    400382: polySurface64
+    400384: polySurface65
+    400386: polySurface66
+    400388: polySurface67
+    400390: polySurface68
+    400392: polySurface69
+    400394: polySurface74
+    400396: polySurface75
+    400398: polySurface78
+    400400: polySurface79
+    400402: polySurface80
+    400404: polySurface81
+    400406: polySurface82
+    400408: polySurface83
+    400410: polySurface84
+    400412: polySurface85
+    400414: polySurface86
+    400416: polySurface87
+    400418: polySurface88
+    400420: polySurface89
+    400422: polySurface90
+    400424: polySurface91
+    400426: polySurface92
+    400428: polySurface93
+    400430: polySurface95
+    400432: proxy_character_geo
+    400434: proxy_character_geo 1
+    400436: right_ankle_geo
+    400438: right_ankle_geo 1
+    400440: right_foot_geo
+    400442: right_foot_geo 1
+    400444: right_hand_geo
+    400446: right_hand_geo 1
+    400448: right_hand_joint_geo
+    400450: right_hand_joint_geo 1
+    400452: right_hip_joint_geo
+    400454: right_hip_joint_geo 1
+    400456: right_knee_geo
+    400458: right_knee_geo 1
+    400460: right_lower_arm_geo
+    400462: right_lower_arm_geo 1
+    400464: right_lower_leg_geo
+    400466: right_lower_leg_geo 1
+    400468: right_shoulder_joint_geo
+    400470: right_shoulder_joint_geo 1
+    400472: right_upper_arm_geo
+    400474: right_upper_arm_geo 1
+    400476: right_upper_leg_geo
+    400478: right_upper_leg_geo 1
+    400480: sessel
+    400482: waist_geo
+    400484: waist_geo 1
+    2100000: blinn2
+    2100002: lambert1
+    2100004: lambert2
+    2100006: lambert10
+    2100008: lambert11
+    2100010: blinn1
+    2300000: chest_geo
+    2300002: chest_geo 1
+    2300004: head_geo
+    2300006: head_geo 1
+    2300008: hip_geo
+    2300010: hip_geo 1
+    2300012: left_ankle_joint_geo
+    2300014: left_ankle_joint_geo 1
+    2300016: left_foot_geo
+    2300018: left_foot_geo 1
+    2300020: left_hand_geo
+    2300022: left_hand_geo 1
+    2300024: left_hand_joint_geo
+    2300026: left_hand_joint_geo 1
+    2300028: left_hip_joint_geo
+    2300030: left_hip_joint_geo 1
+    2300032: left_knee_geo
+    2300034: left_knee_geo 1
+    2300036: left_lower_arm_geo
+    2300038: left_lower_arm_geo 1
+    2300040: left_lower_leg_geo
+    2300042: left_lower_leg_geo 1
+    2300044: left_shoulder_joint_geo
+    2300046: left_shoulder_joint_geo 1
+    2300048: left_upper_arm_geo
+    2300050: left_upper_arm_geo 1
+    2300052: left_upper_leg_geo
+    2300054: left_upper_leg_geo 1
+    2300056: neck_geo
+    2300058: neck_geo 1
+    2300060: pCube306
+    2300062: pCube307
+    2300064: pCube331
+    2300066: pCube334
+    2300068: pCube337
+    2300070: pCube340
+    2300072: pCube342
+    2300074: pCube343
+    2300076: pCube344
+    2300078: pCube345
+    2300080: pCube346
+    2300082: pCube347
+    2300084: pCube348
+    2300086: pCube349
+    2300088: pCube350
+    2300090: pCube351
+    2300092: pCube352
+    2300094: pCube353
+    2300096: pCube354
+    2300098: pCube355
+    2300100: pCube356
+    2300102: pCube479
+    2300104: pCube480
+    2300106: pCube481
+    2300108: pCube482
+    2300110: pCube483
+    2300112: pCube484
+    2300114: pCube485
+    2300116: pCube487
+    2300118: pCube490
+    2300120: pCube501
+    2300122: pCube549
+    2300124: pCube552
+    2300126: pCube553
+    2300128: pCube575
+    2300130: pCube623
+    2300132: pCube624
+    2300134: pCube625
+    2300136: pCube626
+    2300138: pCube646
+    2300140: pCube647
+    2300142: pCube648
+    2300144: pCube649
+    2300146: pCube650
+    2300148: pCube651
+    2300150: pCube652
+    2300152: pCube653
+    2300154: pCube654
+    2300156: pCube655
+    2300158: pCube656
+    2300160: pCube657
+    2300162: pCube658
+    2300164: pCube659
+    2300166: pCube660
+    2300168: pCube661
+    2300170: pCube662
+    2300172: pCube663
+    2300174: pCube664
+    2300176: pCube665
+    2300178: pCube666
+    2300180: pCube667
+    2300182: pCube668
+    2300184: pCube669
+    2300186: pCube706
+    2300188: pCube707
+    2300190: pCube708
+    2300192: pCube712
+    2300194: pCube714
+    2300196: pCube728
+    2300198: pCube732
+    2300200: pCube738
+    2300202: pCube740
+    2300204: pCube745
+    2300206: pCube746
+    2300208: pCube748
+    2300210: pCube769
+    2300212: pCube785
+    2300214: pCube786
+    2300216: pCube816
+    2300218: pCube817
+    2300220: pCube818
+    2300222: pCube819
+    2300224: pCube820
+    2300226: pCube821
+    2300228: pCube826
+    2300230: pCube827
+    2300232: pCube840
+    2300234: pCube841
+    2300236: pCube842
+    2300238: pCube843
+    2300240: pCube854
+    2300242: pCube856
+    2300244: pCube865
+    2300246: pCube866
+    2300248: pCube867
+    2300250: pCube868
+    2300252: pCube869
+    2300254: pCube872
+    2300256: pCube873
+    2300258: pCube874
+    2300260: pCube875
+    2300262: pCube876
+    2300264: pCube877
+    2300266: pCube878
+    2300268: pCube879
+    2300270: pCube888
+    2300272: pCube889
+    2300274: pCube890
+    2300276: pCube891
+    2300278: pCube892
+    2300280: pCube893
+    2300282: pCube894
+    2300284: pCube895
+    2300286: pCube896
+    2300288: pCube897
+    2300290: pCube898
+    2300292: pCube899
+    2300294: pCube900
+    2300296: pCube901
+    2300298: pCube902
+    2300300: pCube903
+    2300302: pCube904
+    2300304: pCube905
+    2300306: pCube906
+    2300308: pCube907
+    2300310: pCube908
+    2300312: pCube909
+    2300314: pCube918
+    2300316: pCube919
+    2300318: pCube920
+    2300320: pCube921
+    2300322: pCube922
+    2300324: pCube923
+    2300326: pCube924
+    2300328: pCube925
+    2300330: pCube926
+    2300332: pCube927
+    2300334: pCube928
+    2300336: pCube929
+    2300338: pCylinder37
+    2300340: polySurface100
+    2300342: polySurface101
+    2300344: polySurface102
+    2300346: polySurface103
+    2300348: polySurface104
+    2300350: polySurface105
+    2300352: polySurface106
+    2300354: polySurface111
+    2300356: polySurface123
+    2300358: polySurface124
+    2300360: polySurface125
+    2300362: polySurface126
+    2300364: polySurface127
+    2300366: polySurface59
+    2300368: polySurface60
+    2300370: polySurface63
+    2300372: polySurface64
+    2300374: polySurface65
+    2300376: polySurface66
+    2300378: polySurface67
+    2300380: polySurface68
+    2300382: polySurface69
+    2300384: polySurface74
+    2300386: polySurface75
+    2300388: polySurface78
+    2300390: polySurface79
+    2300392: polySurface80
+    2300394: polySurface81
+    2300396: polySurface82
+    2300398: polySurface83
+    2300400: polySurface84
+    2300402: polySurface85
+    2300404: polySurface86
+    2300406: polySurface87
+    2300408: polySurface88
+    2300410: polySurface89
+    2300412: polySurface90
+    2300414: polySurface91
+    2300416: polySurface92
+    2300418: polySurface93
+    2300420: polySurface95
+    2300422: right_ankle_geo
+    2300424: right_ankle_geo 1
+    2300426: right_foot_geo
+    2300428: right_foot_geo 1
+    2300430: right_hand_geo
+    2300432: right_hand_geo 1
+    2300434: right_hand_joint_geo
+    2300436: right_hand_joint_geo 1
+    2300438: right_hip_joint_geo
+    2300440: right_hip_joint_geo 1
+    2300442: right_knee_geo
+    2300444: right_knee_geo 1
+    2300446: right_lower_arm_geo
+    2300448: right_lower_arm_geo 1
+    2300450: right_lower_leg_geo
+    2300452: right_lower_leg_geo 1
+    2300454: right_shoulder_joint_geo
+    2300456: right_shoulder_joint_geo 1
+    2300458: right_upper_arm_geo
+    2300460: right_upper_arm_geo 1
+    2300462: right_upper_leg_geo
+    2300464: right_upper_leg_geo 1
+    2300466: waist_geo
+    2300468: waist_geo 1
+    3300000: chest_geo
+    3300002: chest_geo 1
+    3300004: head_geo
+    3300006: head_geo 1
+    3300008: hip_geo
+    3300010: hip_geo 1
+    3300012: left_ankle_joint_geo
+    3300014: left_ankle_joint_geo 1
+    3300016: left_foot_geo
+    3300018: left_foot_geo 1
+    3300020: left_hand_geo
+    3300022: left_hand_geo 1
+    3300024: left_hand_joint_geo
+    3300026: left_hand_joint_geo 1
+    3300028: left_hip_joint_geo
+    3300030: left_hip_joint_geo 1
+    3300032: left_knee_geo
+    3300034: left_knee_geo 1
+    3300036: left_lower_arm_geo
+    3300038: left_lower_arm_geo 1
+    3300040: left_lower_leg_geo
+    3300042: left_lower_leg_geo 1
+    3300044: left_shoulder_joint_geo
+    3300046: left_shoulder_joint_geo 1
+    3300048: left_upper_arm_geo
+    3300050: left_upper_arm_geo 1
+    3300052: left_upper_leg_geo
+    3300054: left_upper_leg_geo 1
+    3300056: neck_geo
+    3300058: neck_geo 1
+    3300060: pCube306
+    3300062: pCube307
+    3300064: pCube331
+    3300066: pCube334
+    3300068: pCube337
+    3300070: pCube340
+    3300072: pCube342
+    3300074: pCube343
+    3300076: pCube344
+    3300078: pCube345
+    3300080: pCube346
+    3300082: pCube347
+    3300084: pCube348
+    3300086: pCube349
+    3300088: pCube350
+    3300090: pCube351
+    3300092: pCube352
+    3300094: pCube353
+    3300096: pCube354
+    3300098: pCube355
+    3300100: pCube356
+    3300102: pCube479
+    3300104: pCube480
+    3300106: pCube481
+    3300108: pCube482
+    3300110: pCube483
+    3300112: pCube484
+    3300114: pCube485
+    3300116: pCube487
+    3300118: pCube490
+    3300120: pCube501
+    3300122: pCube549
+    3300124: pCube552
+    3300126: pCube553
+    3300128: pCube575
+    3300130: pCube623
+    3300132: pCube624
+    3300134: pCube625
+    3300136: pCube626
+    3300138: pCube646
+    3300140: pCube647
+    3300142: pCube648
+    3300144: pCube649
+    3300146: pCube650
+    3300148: pCube651
+    3300150: pCube652
+    3300152: pCube653
+    3300154: pCube654
+    3300156: pCube655
+    3300158: pCube656
+    3300160: pCube657
+    3300162: pCube658
+    3300164: pCube659
+    3300166: pCube660
+    3300168: pCube661
+    3300170: pCube662
+    3300172: pCube663
+    3300174: pCube664
+    3300176: pCube665
+    3300178: pCube666
+    3300180: pCube667
+    3300182: pCube668
+    3300184: pCube669
+    3300186: pCube706
+    3300188: pCube707
+    3300190: pCube708
+    3300192: pCube712
+    3300194: pCube714
+    3300196: pCube728
+    3300198: pCube732
+    3300200: pCube738
+    3300202: pCube740
+    3300204: pCube745
+    3300206: pCube746
+    3300208: pCube748
+    3300210: pCube769
+    3300212: pCube785
+    3300214: pCube786
+    3300216: pCube816
+    3300218: pCube817
+    3300220: pCube818
+    3300222: pCube819
+    3300224: pCube820
+    3300226: pCube821
+    3300228: pCube826
+    3300230: pCube827
+    3300232: pCube840
+    3300234: pCube841
+    3300236: pCube842
+    3300238: pCube843
+    3300240: pCube854
+    3300242: pCube856
+    3300244: pCube865
+    3300246: pCube866
+    3300248: pCube867
+    3300250: pCube868
+    3300252: pCube869
+    3300254: pCube872
+    3300256: pCube873
+    3300258: pCube874
+    3300260: pCube875
+    3300262: pCube876
+    3300264: pCube877
+    3300266: pCube878
+    3300268: pCube879
+    3300270: pCube888
+    3300272: pCube889
+    3300274: pCube890
+    3300276: pCube891
+    3300278: pCube892
+    3300280: pCube893
+    3300282: pCube894
+    3300284: pCube895
+    3300286: pCube896
+    3300288: pCube897
+    3300290: pCube898
+    3300292: pCube899
+    3300294: pCube900
+    3300296: pCube901
+    3300298: pCube902
+    3300300: pCube903
+    3300302: pCube904
+    3300304: pCube905
+    3300306: pCube906
+    3300308: pCube907
+    3300310: pCube908
+    3300312: pCube909
+    3300314: pCube918
+    3300316: pCube919
+    3300318: pCube920
+    3300320: pCube921
+    3300322: pCube922
+    3300324: pCube923
+    3300326: pCube924
+    3300328: pCube925
+    3300330: pCube926
+    3300332: pCube927
+    3300334: pCube928
+    3300336: pCube929
+    3300338: pCylinder37
+    3300340: polySurface100
+    3300342: polySurface101
+    3300344: polySurface102
+    3300346: polySurface103
+    3300348: polySurface104
+    3300350: polySurface105
+    3300352: polySurface106
+    3300354: polySurface111
+    3300356: polySurface123
+    3300358: polySurface124
+    3300360: polySurface125
+    3300362: polySurface126
+    3300364: polySurface127
+    3300366: polySurface59
+    3300368: polySurface60
+    3300370: polySurface63
+    3300372: polySurface64
+    3300374: polySurface65
+    3300376: polySurface66
+    3300378: polySurface67
+    3300380: polySurface68
+    3300382: polySurface69
+    3300384: polySurface74
+    3300386: polySurface75
+    3300388: polySurface78
+    3300390: polySurface79
+    3300392: polySurface80
+    3300394: polySurface81
+    3300396: polySurface82
+    3300398: polySurface83
+    3300400: polySurface84
+    3300402: polySurface85
+    3300404: polySurface86
+    3300406: polySurface87
+    3300408: polySurface88
+    3300410: polySurface89
+    3300412: polySurface90
+    3300414: polySurface91
+    3300416: polySurface92
+    3300418: polySurface93
+    3300420: polySurface95
+    3300422: right_ankle_geo
+    3300424: right_ankle_geo 1
+    3300426: right_foot_geo
+    3300428: right_foot_geo 1
+    3300430: right_hand_geo
+    3300432: right_hand_geo 1
+    3300434: right_hand_joint_geo
+    3300436: right_hand_joint_geo 1
+    3300438: right_hip_joint_geo
+    3300440: right_hip_joint_geo 1
+    3300442: right_knee_geo
+    3300444: right_knee_geo 1
+    3300446: right_lower_arm_geo
+    3300448: right_lower_arm_geo 1
+    3300450: right_lower_leg_geo
+    3300452: right_lower_leg_geo 1
+    3300454: right_shoulder_joint_geo
+    3300456: right_shoulder_joint_geo 1
+    3300458: right_upper_arm_geo
+    3300460: right_upper_arm_geo 1
+    3300462: right_upper_leg_geo
+    3300464: right_upper_leg_geo 1
+    3300466: waist_geo
+    3300468: waist_geo 1
+    4300000: polySurface59
+    4300002: polySurface60
+    4300004: polySurface63
+    4300006: polySurface64
+    4300008: polySurface65
+    4300010: polySurface66
+    4300012: polySurface67
+    4300014: polySurface68
+    4300016: polySurface69
+    4300018: polySurface74
+    4300020: polySurface75
+    4300022: polySurface78
+    4300024: polySurface79
+    4300026: polySurface80
+    4300028: polySurface81
+    4300030: polySurface82
+    4300032: polySurface83
+    4300034: polySurface84
+    4300036: polySurface85
+    4300038: polySurface86
+    4300040: polySurface87
+    4300042: polySurface88
+    4300044: polySurface89
+    4300046: polySurface90
+    4300048: polySurface91
+    4300050: polySurface92
+    4300052: polySurface93
+    4300054: polySurface100
+    4300056: polySurface101
+    4300058: polySurface102
+    4300060: polySurface103
+    4300062: polySurface104
+    4300064: polySurface105
+    4300066: polySurface106
+    4300068: polySurface123
+    4300070: polySurface124
+    4300072: polySurface125
+    4300074: polySurface126
+    4300076: pCube306
+    4300078: pCube307
+    4300080: pCube331
+    4300082: pCube334
+    4300084: pCube337
+    4300086: pCube340
+    4300088: pCube342
+    4300090: pCube343
+    4300092: pCube344
+    4300094: pCube345
+    4300096: pCube346
+    4300098: pCube347
+    4300100: pCube348
+    4300102: pCube349
+    4300104: pCube350
+    4300106: pCube351
+    4300108: pCube352
+    4300110: pCube353
+    4300112: pCube354
+    4300114: pCube355
+    4300116: pCube356
+    4300118: pCube479
+    4300120: pCube480
+    4300122: pCube481
+    4300124: pCube482
+    4300126: pCube483
+    4300128: pCube484
+    4300130: pCube485
+    4300132: pCube487
+    4300134: pCube490
+    4300136: pCube501
+    4300138: pCube549
+    4300140: pCube552
+    4300142: pCube553
+    4300144: pCube575
+    4300146: pCube623
+    4300148: pCube624
+    4300150: pCube625
+    4300152: pCube626
+    4300154: pCube646
+    4300156: pCube647
+    4300158: pCube648
+    4300160: pCube649
+    4300162: pCube650
+    4300164: pCube651
+    4300166: pCube652
+    4300168: pCube653
+    4300170: pCube654
+    4300172: pCube655
+    4300174: pCube656
+    4300176: pCube657
+    4300178: pCube658
+    4300180: pCube659
+    4300182: pCube660
+    4300184: pCube661
+    4300186: pCube662
+    4300188: pCube663
+    4300190: pCube664
+    4300192: pCube665
+    4300194: pCube666
+    4300196: pCube667
+    4300198: pCube668
+    4300200: pCube669
+    4300202: pCube706
+    4300204: pCube707
+    4300206: pCube708
+    4300208: pCube712
+    4300210: pCube714
+    4300212: pCube728
+    4300214: pCube732
+    4300216: pCube738
+    4300218: pCube740
+    4300220: pCube745
+    4300222: pCube746
+    4300224: pCube748
+    4300226: pCube769
+    4300228: polySurface95
+    4300230: polySurface111
+    4300232: polySurface127
+    4300234: pCube785
+    4300236: pCube786
+    4300238: left_hip_joint_geo
+    4300240: right_upper_leg_geo
+    4300242: head_geo
+    4300244: neck_geo
+    4300246: hip_geo
+    4300248: chest_geo
+    4300250: waist_geo
+    4300252: right_knee_geo
+    4300254: right_hip_joint_geo
+    4300256: right_lower_leg_geo
+    4300258: right_ankle_geo
+    4300260: right_foot_geo
+    4300262: left_upper_leg_geo
+    4300264: left_knee_geo
+    4300266: left_lower_leg_geo
+    4300268: left_ankle_joint_geo
+    4300270: left_foot_geo
+    4300272: right_shoulder_joint_geo
+    4300274: right_upper_arm_geo
+    4300276: right_lower_arm_geo
+    4300278: right_hand_joint_geo
+    4300280: right_hand_geo
+    4300282: left_shoulder_joint_geo
+    4300284: left_upper_arm_geo
+    4300286: left_lower_arm_geo
+    4300288: left_hand_joint_geo
+    4300290: left_hand_geo
+    4300292: pCube816
+    4300294: pCube817
+    4300296: pCube818
+    4300298: pCube819
+    4300300: pCube820
+    4300302: pCube821
+    4300304: left_hip_joint_geo
+    4300306: right_upper_leg_geo
+    4300308: head_geo
+    4300310: neck_geo
+    4300312: hip_geo
+    4300314: chest_geo
+    4300316: waist_geo
+    4300318: right_knee_geo
+    4300320: right_hip_joint_geo
+    4300322: right_lower_leg_geo
+    4300324: right_ankle_geo
+    4300326: right_foot_geo
+    4300328: left_upper_leg_geo
+    4300330: left_knee_geo
+    4300332: left_lower_leg_geo
+    4300334: left_ankle_joint_geo
+    4300336: left_foot_geo
+    4300338: right_shoulder_joint_geo
+    4300340: right_upper_arm_geo
+    4300342: right_lower_arm_geo
+    4300344: right_hand_joint_geo
+    4300346: right_hand_geo
+    4300348: left_shoulder_joint_geo
+    4300350: left_upper_arm_geo
+    4300352: left_lower_arm_geo
+    4300354: left_hand_joint_geo
+    4300356: left_hand_geo
+    4300358: pCube826
+    4300360: pCube827
+    4300362: pCube840
+    4300364: pCube841
+    4300366: pCube842
+    4300368: pCube843
+    4300370: pCube854
+    4300372: pCube856
+    4300374: pCube865
+    4300376: pCube866
+    4300378: pCube867
+    4300380: pCube868
+    4300382: pCube869
+    4300384: pCube872
+    4300386: pCube873
+    4300388: pCube874
+    4300390: pCube875
+    4300392: pCube876
+    4300394: pCube877
+    4300396: pCube878
+    4300398: pCube879
+    4300400: pCube888
+    4300402: pCube889
+    4300404: pCube890
+    4300406: pCube891
+    4300408: pCube892
+    4300410: pCube893
+    4300412: pCube894
+    4300414: pCube895
+    4300416: pCube896
+    4300418: pCube897
+    4300420: pCube898
+    4300422: pCube899
+    4300424: pCube900
+    4300426: pCube901
+    4300428: pCylinder37
+    4300430: pCube902
+    4300432: pCube903
+    4300434: pCube904
+    4300436: pCube905
+    4300438: pCube906
+    4300440: pCube907
+    4300442: pCube908
+    4300444: pCube909
+    4300446: pCube918
+    4300448: pCube919
+    4300450: pCube920
+    4300452: pCube921
+    4300454: pCube922
+    4300456: pCube923
+    4300458: pCube924
+    4300460: pCube925
+    4300462: pCube926
+    4300464: pCube927
+    4300466: pCube928
+    4300468: pCube929
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
