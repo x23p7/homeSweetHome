@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GreyBox/OverShoulder/Scenes/overShoulderCamTest.unity
+- path: Assets/GreyBox/OverShoulder/Scenes/missingPersonRoom.unity
   isLoaded: 1
   isActive: 1
