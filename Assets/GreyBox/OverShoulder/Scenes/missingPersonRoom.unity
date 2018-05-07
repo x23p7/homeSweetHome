@@ -7350,28 +7350,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &858488452 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1589571071618716, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-    type: 2}
-  m_PrefabInternal: {fileID: 1032382934}
---- !u!114 &858488453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 858488452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99d2ecd5926f2d8419e5ad3727ba6878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  letterDelay: 0.02
-  nameText: {fileID: 268104331}
-  dialogueText: {fileID: 1096784931}
-  panelAnim: {fileID: 1164826103}
-  nameAnim: {fileID: 268104333}
-  dialogueAnim: {fileID: 1096784933}
 --- !u!1 &914308860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7711,6 +7689,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 268104331}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1096784931}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: panelAnim
+      value: 
+      objectReference: {fileID: 1164826103}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: nameAnim
+      value: 
+      objectReference: {fileID: 268104333}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: dialogueAnim
+      value: 
+      objectReference: {fileID: 1096784933}
     - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: currentCam
@@ -7721,11 +7724,6 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1966504156}
-    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-        type: 2}
-      propertyPath: camOffSet.y
-      value: 0.6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
   m_IsPrefabParent: 0

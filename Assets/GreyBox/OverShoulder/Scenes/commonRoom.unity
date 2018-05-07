@@ -121,8 +121,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -156,7 +155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
@@ -170,19 +169,16 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.9110968
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1]
       value: I guess it's just too clean and primitive.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[2]
       value: Like someone just placed it here. As a kind of proxy object instead of
         the real deal.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[0]
       value: This doesnt look very comfortable
       objectReference: {fileID: 0}
@@ -261,8 +257,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -296,31 +291,44 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.6410332
+      value: 2.2564917
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalScale.z
       value: 2.5140326
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[2]
       value: Like someone just placed it here. As a kind of proxy object instead of
         the real deal.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Just a group of chairs for meeting, sitting and general time wasting.
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: Not really my thing to be honest.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: A round table and some chairs.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: Perfect for playing cardgames.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -334,19 +342,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.8962394
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.6238222
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.8379226
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.08715578
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalRotation.y
@@ -358,22 +366,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9961947
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-        type: 2}
-      propertyPath: panelAnim
-      value: 
-      objectReference: {fileID: 2043290652}
-    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-        type: 2}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 2043290653}
     - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: nameText
@@ -381,43 +379,37 @@ Prefab:
       objectReference: {fileID: 2043290654}
     - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
-      propertyPath: dialogueAnim
+      propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 2043290650}
+      objectReference: {fileID: 2043290653}
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: panelAnim
+      value: 
+      objectReference: {fileID: 2043290652}
     - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: nameAnim
       value: 
       objectReference: {fileID: 2043290651}
-    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+    - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
-      propertyPath: player
+      propertyPath: dialogueAnim
       value: 
-      objectReference: {fileID: 2139445463}
+      objectReference: {fileID: 2043290650}
     - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: currentCam
       value: 
       objectReference: {fileID: 1077580048}
+    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2139445463}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1006856158 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1589571071618716, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-    type: 2}
-  m_PrefabInternal: {fileID: 883235569}
---- !u!114 &1006856159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1006856158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d26b74cc28867647aa59ca6741337a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1077580045
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,13 +484,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077580045}
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &1283245781
 Prefab:
   m_ObjectHideFlags: 0
@@ -536,7 +528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100036, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6417,10 +6409,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6458,33 +6450,52 @@ Prefab:
       propertyPath: m_Name
       value: DeskTextTrigger (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.3857486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.592584
-      objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
-      propertyPath: dialogue.sentences.Array.data[2]
-      value: Like someone just placed it here. As a kind of proxy object instead of
-        the real deal.
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: Must be some new kind of workout I havent heard of yet
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: 'Hello Mrs. Is this some kind of new work out ?
+
+        Looks pretty intense to be honest.'
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: I guess it's just too clean and primitive.
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: A-Pose-Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: This is actually how I focus my superpowers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2].text
+      value: And what would those be ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[3].name
+      value: A-Pose-Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[3].text
+      value: Attracting people who ask stupid questions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: triggerOnButtonPress
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -6581,7 +6592,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: dialogue.sentences.Array.size
       value: 1
@@ -6616,27 +6631,47 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
       value: DeskTextTrigger (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1]
       value: I guess it's just too clean and primitive.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[2]
       value: Like someone just placed it here. As a kind of proxy object instead of
         the real deal.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].text
       value: A comfy fireplace.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: A comfy fireplace
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: triggerOnButtonPress
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -6648,11 +6683,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -6810,7 +6840,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: dialogue.sentences.Array.size
       value: 2
@@ -6845,31 +6879,65 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
       value: DeskTextTrigger (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[2]
       value: Like someone just placed it here. As a kind of proxy object instead of
         the real deal.
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: This must be the telephone where my colleague must have called me from.
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114263847390027134, guid: 9009fa1b42849cc4cbc34dee2d386dba,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: 'There got to be some kind of clue around here.
-
-        .....
-
-        later in developement that is.'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: Does this work ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: The telefone
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: It does!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: This must be the telefone that my colleague used to call me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: There has to be some kind of clue around here somewhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: triggerOnButtonPress
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -6911,7 +6979,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}

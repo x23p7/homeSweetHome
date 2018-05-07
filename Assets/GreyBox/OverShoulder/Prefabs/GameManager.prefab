@@ -39,13 +39,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1589571071618716}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8962394, y: -1.6238222, z: 2.8379226}
+  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!114 &114045147419487490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
   player: {fileID: 0}
   horizontalRotSpeed: 3
   verticalRotSpeed: 1
-  camOffSet: {x: -2.5, y: 0.6, z: 1}
+  camOffSet: {x: -1.5, y: 0.75, z: 0.5}
   camBackwardsCheckRange: 0.5
   camPushMask:
     serializedVersion: 2

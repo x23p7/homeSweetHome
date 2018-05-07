@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
     public static DialogueManager instance;
-    private Queue<string> sentences;
+    private Queue<Sentence> sentences;
     DialogueTrigger currentDialogueTrigger;
     public float letterDelay;
     public Text nameText;
@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
 	}
 
     public void StartDialogue(DialogueTrigger dialogueTrigger,Dialogue dialogue)
@@ -38,9 +38,8 @@ public class DialogueManager : MonoBehaviour {
         dialogueAnim.SetBool("dialogueActive", true);
         currentDialogueTrigger = dialogueTrigger;
         currentDialogueTrigger.dialogueActive = true;
-        nameText.text = dialogue.name;
         sentences.Clear();
-        foreach(string sentence in dialogue.sentences)
+        foreach(Sentence sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -54,15 +53,16 @@ public class DialogueManager : MonoBehaviour {
             EndDialogue();
             return;
         }
-        string sentence = sentences.Dequeue();
+        Sentence sentence = sentences.Dequeue();
+        nameText.text = sentence.name;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence (Sentence sentence)
     {
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.text.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(letterDelay);

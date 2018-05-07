@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33352071678730276}
   - component: {fileID: 23868122122105264}
   - component: {fileID: 136067547149115150}
-  - component: {fileID: 114263847390027134}
+  - component: {fileID: 114795159831240548}
   m_Layer: 0
   m_Name: DeskTextTrigger
   m_TagString: Untagged
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1847330751857986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.826, y: -1.499, z: -7.833}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.214614, y: 6.51, z: -28.339474}
+  m_LocalScale: {x: 1.3857486, y: 0.96, z: 1.592584}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1847330751857986}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114263847390027134
+--- !u!114 &114795159831240548
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -96,15 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerOnButtonPress: 1
+  triggerOnButtonPress: 0
   dialogueActive: 0
   dialogue:
-    name: Chano
-    sentences:
-    - Something feels odd about this desk
-    - I guess it's just too clean and primitive.
-    - Like someone just placed it here. As a kind of proxy object instead of the real
-      deal.
+    sentences: []
 --- !u!136 &136067547149115150
 CapsuleCollider:
   m_ObjectHideFlags: 1
