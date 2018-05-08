@@ -125,6 +125,11 @@ Prefab:
       propertyPath: dialogue.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
       value: -6.513335
@@ -181,6 +186,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[0]
       value: This doesnt look very comfortable
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: triggerOnButtonPress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: This looks pretty uncomfortable
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: Lying Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: Bugger off you pervert.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -261,6 +291,11 @@ Prefab:
       propertyPath: dialogue.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
       value: -10.713146
@@ -329,6 +364,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1].text
       value: Perfect for playing cardgames.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0].text
+      value: A table with chairs. Perfectly round.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: triggerOnButtonPress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: For playing cardgames and having a general good time.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
@@ -1004,7 +1064,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100586, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1945,6 +2005,10 @@ Prefab:
     - target: {fileID: 100148, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400586, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 681
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
@@ -6177,6 +6241,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 16.770935, y: 350, z: 50}
   m_Center: {x: 540.7285, y: 275, z: -275}
+--- !u!95 &1283247069
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283246031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66543d58af59f254d938a417f7598a42, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1298246490
 GameObject:
   m_ObjectHideFlags: 0

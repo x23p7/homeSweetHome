@@ -148,7 +148,6 @@ public class CameraController : MonoBehaviour
         {
             camDistance = Mathf.Lerp(camDistance,maxDistance,camMoveSmooth/5f);
         }
-        print(rayHitDist.Count);
         //alt
         /*if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
         {

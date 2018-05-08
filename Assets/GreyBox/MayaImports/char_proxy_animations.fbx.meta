@@ -293,6 +293,7 @@ ModelImporter:
     13700048: right_upper_arm_geo
     13700050: right_upper_leg_geo
     13700052: waist_geo
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -313,7 +314,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -409,8 +410,592 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: hip_ctrl_geo
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_upper_leg_ctrl_geo
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_upper_leg_ctrl_geo
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_knee_ctrl_geo
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_knee_ctrl_geo
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_ankle_ctrl_geo
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_ankle_ctrl_geo
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: waist_ctrl_geo
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_ctrl_geo_grp
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_shoulder_ctrl
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_shoulder_ctrl
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_elbow_ctrl_geo
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_elbow_ctrl_geo
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_hand_ctrl_geo
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_hand_ctrl_geo
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: left_foot_ctrl_geo
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: right_foot_ctrl_geo
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_ctrl_geo
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: char_proxy_animations(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: proxy_character_ctrl_grps
+      parentName: char_proxy_animations(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip_ctrl_grp
+      parentName: proxy_character_ctrl_grps
+      position: {x: -0, y: 0.63095, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip_ctrl_geo
+      parentName: hip_ctrl_grp
+      position: {x: -0, y: -0.075190805, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_upper_leg_ctrl_grp
+      parentName: hip_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_upper_leg_ctrl_geo
+      parentName: left_upper_leg_ctrl_grp
+      position: {x: -0.044999994, y: -0.049999997, z: 0}
+      rotation: {x: -0.038413968, y: 0, z: -0, w: 0.9992619}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee_ctrl_grp
+      parentName: left_upper_leg_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee_ctrl_geo
+      parentName: left_knee_ctrl_grp
+      position: {x: 1.11022296e-17, y: -0.1931475, z: 0.026801698}
+      rotation: {x: 0.15619546, y: -0, z: -0, w: 0.9877262}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle_ctrl_grp
+      parentName: left_knee_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle_ctrl_geo
+      parentName: left_ankle_ctrl_grp
+      position: {x: -5.5511148e-18, y: -0.2299915, z: 0}
+      rotation: {x: -0.12055907, y: 0, z: -0, w: 0.9927062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_food_ctrl_grp
+      parentName: left_ankle_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_foot_ctrl_geo
+      parentName: left_food_ctrl_grp
+      position: {x: -4.9960035e-17, y: -0.07500158, z: 0.059999987}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_leg_IK_handle
+      parentName: left_ankle_ctrl_geo
+      position: {x: -3.330669e-17, y: -0.000001587636, z: -0.00000001035813}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_upper_leg_ctrl_grp
+      parentName: hip_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_upper_leg_ctrl_geo
+      parentName: right_upper_leg_ctrl_grp
+      position: {x: 0.044999994, y: -0.050001703, z: 0}
+      rotation: {x: -0.038413968, y: 0, z: -0, w: 0.9992619}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee_ctrl_grp
+      parentName: right_upper_leg_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee_ctrl_geo
+      parentName: right_knee_ctrl_grp
+      position: {x: 1.11022296e-17, y: -0.1931475, z: 0.026801698}
+      rotation: {x: 0.15619546, y: -0, z: -0, w: 0.9877262}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle_ctrl_grp
+      parentName: right_knee_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle_ctrl_geo
+      parentName: right_ankle_ctrl_grp
+      position: {x: -5.5511148e-18, y: -0.2299915, z: 0}
+      rotation: {x: -0.12055907, y: 0, z: -0, w: 0.9927062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_leg_IK_handle
+      parentName: right_ankle_ctrl_geo
+      position: {x: -0, y: 7.7715604e-17, z: 1.11022296e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_toe_ctrl_grp
+      parentName: right_ankle_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_foot_ctrl_geo
+      parentName: right_toe_ctrl_grp
+      position: {x: 1.11022296e-17, y: -0.074999996, z: 0.06}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waist_ctrl_grp
+      parentName: hip_ctrl_geo
+      position: {x: -0, y: -0.5559267, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waist_ctrl_geo
+      parentName: waist_ctrl_grp
+      position: {x: -0, y: 0.63095, z: 0}
+      rotation: {x: 0.05654588, y: -0, z: -0, w: 0.99840003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_ctrl_grp
+      parentName: waist_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_ctrl_geo
+      parentName: chest_ctrl_grp
+      position: {x: -0, y: 0.09904999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck_ctrl_geo_grp
+      parentName: chest_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck_ctrl_geo
+      parentName: neck_ctrl_geo_grp
+      position: {x: -0, y: 0.08, z: -0.012999998}
+      rotation: {x: -0.058506116, y: 0, z: -0, w: 0.9982871}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_ctrl_grp
+      parentName: chest_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_ctrl_grp
+      parentName: right_shoulder_ctrl_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_ctrl
+      parentName: left_shoulder_ctrl_grp
+      position: {x: -0.0931, y: 0.00395, z: -0.0061023994}
+      rotation: {x: 0, y: 0, z: -0.7489557, w: 0.66262007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow_ctrl_grp
+      parentName: left_shoulder_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow_ctrl_geo
+      parentName: left_elbow_ctrl_grp
+      position: {x: 0.10750168, y: -0.0000012905313, z: 6.9388935e-19}
+      rotation: {x: -0.16886039, y: -0.16886039, z: 0.68664855, w: 0.68664855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_geo_ctrl_grp
+      parentName: left_elbow_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_ctrl_geo
+      parentName: left_hand_geo_ctrl_grp
+      position: {x: -0.0046276324, y: -0.15985966, z: -0.000000006209444}
+      rotation: {x: 0, y: 0, z: 0.27563736, w: 0.9612617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_ctrl
+      parentName: right_shoulder_ctrl_grp
+      position: {x: 0.09308399, y: 0.00395, z: -0.0061023994}
+      rotation: {x: 0, y: -0, z: -0.66262007, w: 0.7489557}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_elbow_ctrl_grp
+      parentName: right_shoulder_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_elbow_ctrl_geo
+      parentName: right_elbow_ctrl_grp
+      position: {x: 0.10750168, y: -0.0000012905313, z: 6.9388935e-19}
+      rotation: {x: -0.16886178, y: -0.16886178, z: 0.6866482, w: 0.6866482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hand_geo_ctrl_grp
+      parentName: right_elbow_ctrl_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hand_ctrl_geo
+      parentName: right_hand_geo_ctrl_grp
+      position: {x: 0.008373978, y: -0.15978009, z: -4.8572252e-18}
+      rotation: {x: 0, y: -0, z: -0.27563736, w: 0.9612617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: proxy_character_geo
+      parentName: char_proxy_animations(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_foot_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_lower_arm_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_lower_leg_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_upper_arm_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_upper_leg_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_foot_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hand_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hand_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_lower_arm_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_lower_leg_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_joint_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_upper_arm_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_upper_leg_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waist_geo
+      parentName: proxy_character_geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: proxy_character_joints
+      parentName: char_proxy_animations(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: base
+      parentName: proxy_character_joints
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_joint
+      parentName: base
+      position: {x: -0, y: 0.72919905, z: 0.011183814}
+      rotation: {x: 0.05654588, y: -0, z: -0, w: 0.99840003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_joint
+      parentName: chest_joint
+      position: {x: -0, y: 0.08, z: -0.012999998}
+      rotation: {x: -0.14528993, y: 0, z: -0, w: 0.9893891}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_joint
+      parentName: chest_joint
+      position: {x: -0.093086645, y: 0.003958672, z: -0.006102406}
+      rotation: {x: 0, y: 0, z: 0.6678326, w: 0.7443116}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow_joint
+      parentName: left_shoulder_joint
+      position: {x: -0.10750255, y: 0.000000035712613, z: -0.000010388581}
+      rotation: {x: -0.0029174758, y: 0.23878682, z: -0.025419587, w: 0.9707349}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_joint
+      parentName: left_elbow_joint
+      position: {x: -0.16, y: 8.8817837e-17, z: -4.4408918e-17}
+      rotation: {x: 0, y: 0, z: 0.27563736, w: 0.9612617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_joint1
+      parentName: chest_joint
+      position: {x: 0.09308399, y: 0.00395, z: -0.0061023994}
+      rotation: {x: 0.7443116, y: -0.6678326, z: 4.0892954e-17, w: -4.557594e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow_joint1
+      parentName: left_shoulder_joint1
+      position: {x: 0.107502885, y: 0.0000012738152, z: 0.000004868382}
+      rotation: {x: -0.0029174907, y: 0.2387888, z: -0.02541958, w: 0.9707344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hand_joint1
+      parentName: left_elbow_joint1
+      position: {x: 0.15802896, y: -0.00059537793, z: 1.2546674e-11}
+      rotation: {x: 1.11408e-10, y: 0.000000008611719, z: 0.27563736, w: 0.9612617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waist_joint
+      parentName: base
+      position: {x: -0, y: 0.6307593, z: -0.0000026303098}
+      rotation: {x: 0.05654588, y: -0, z: -0, w: 0.99840003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip_joint
+      parentName: waist_joint
+      position: {x: -0, y: -0.07452023, z: 0.00847094}
+      rotation: {x: -0.05654588, y: 0, z: -0, w: 0.99840003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_upper_leg_joint
+      parentName: hip_joint
+      position: {x: -0.044999994, y: -0.049999997, z: -2.7877947e-18}
+      rotation: {x: -0.1072116, y: -0.0000000073803843, z: -0.0000000010203308, w: 0.99423623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee_joint
+      parentName: left_upper_leg_joint
+      position: {x: -0, y: -0.195, z: 1.11022296e-17}
+      rotation: {x: 0.22395842, y: -2.7077283e-17, z: -1.1783208e-16, w: 0.9745987}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle_joint
+      parentName: left_knee_joint
+      position: {x: -2.2204459e-17, y: -0.22999997, z: 5.5511148e-18}
+      rotation: {x: 0.0043633096, y: -0, z: -0, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint1
+      parentName: left_ankle_joint
+      position: {x: 1.11022296e-17, y: -0.057785068, z: 0.07672001}
+      rotation: {x: -0.124931, y: 0, z: -0, w: 0.99216545}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_upper_leg_joint
+      parentName: hip_joint
+      position: {x: 0.044999994, y: -0.050001703, z: 4.0308602e-18}
+      rotation: {x: 0.99423623, y: 4.5265437e-17, z: 1.2798442e-16, w: 0.10721189}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee_joint
+      parentName: right_upper_leg_joint
+      position: {x: 5.5511148e-18, y: 0.19499816, z: -0.00000026702514}
+      rotation: {x: 0.22395843, y: 1.6981336e-17, z: 9.4399585e-17, w: 0.9745987}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle_joint
+      parentName: right_knee_joint
+      position: {x: -1.11022296e-17, y: 0.23000024, z: 0.000000005413292}
+      rotation: {x: 0.0043633096, y: -0, z: -0, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint2
+      parentName: right_ankle_joint
+      position: {x: 1.11022296e-17, y: 0.0577851, z: -0.07671998}
+      rotation: {x: -0.12493076, y: 0, z: -0, w: 0.99216545}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -421,10 +1006,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
