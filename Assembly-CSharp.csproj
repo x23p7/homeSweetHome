@@ -59,13 +59,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Common\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\Dialogue.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\Effector.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\GameState.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\Sentence.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\State.cs" />
+    <Compile Include="Assets\Common\Scripts\Classes\StateEffect.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Common\Scripts\GameStateManager.cs" />
     <Compile Include="Assets\Common\Scripts\InputManager.cs" />
     <Compile Include="Assets\Common\Scripts\MouseAndKeyBoard.cs" />
     <Compile Include="Assets\Common\Scripts\PS4Input.cs" />
-    <Compile Include="Assets\Common\Scripts\Sentence.cs" />
     <Compile Include="Assets\Common\Scripts\XboxInput.cs" />
     <Compile Include="Assets\GreyBox\OverShoulder\Scripts\CameraController.cs" />
     <Compile Include="Assets\GreyBox\OverShoulder\Scripts\playerMovement.cs" />

@@ -160,7 +160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
@@ -215,6 +215,39 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &269397647 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    type: 2}
+  m_PrefabInternal: {fileID: 1942739448}
+--- !u!114 &269397648 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    type: 2}
+  m_PrefabInternal: {fileID: 1942739448}
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+--- !u!114 &269397649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269397647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnButtonPress: 1
+  dialogueActive: 0
+  dialogue:
+    sentences:
+    - name: A-Pose-Girl
+      text: Seems you found the dooblydoo.
+    - name: A-Pose-Girl
+      text: I dont care TBH.
+  effects:
+  - stateName: A-Pose-Girl confronted
+    setTo: 1
 --- !u!1 &324417810
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +359,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalScale.x
@@ -430,7 +463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4304673906221490, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114757554760822206, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
@@ -466,7 +499,7 @@ Prefab:
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2139445463}
+      objectReference: {fileID: 1955207143}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
   m_IsPrefabParent: 0
@@ -588,7 +621,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100036, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2009,6 +2042,10 @@ Prefab:
     - target: {fileID: 400586, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
       propertyPath: m_LocalPosition.z
       value: 681
+      objectReference: {fileID: 0}
+    - target: {fileID: 100452, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
+      propertyPath: m_Name
+      value: Paper Notice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c81a78eab1d711743b95abcc90a713fc, type: 3}
@@ -6526,11 +6563,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
-      value: DeskTextTrigger (3)
+      value: A-Pose-Girl-Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
@@ -6579,9 +6616,201 @@ Prefab:
       propertyPath: triggerOnButtonPress
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 136067547149115150, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23868122122105264, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1954592057
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -22.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1955207143 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1469159298896086, guid: d530b0e6757763e469a8fe6e9e334fc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954592057}
+--- !u!1 &1962802970 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    type: 2}
+  m_PrefabInternal: {fileID: 2040089978}
+--- !u!114 &1962802971 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+    type: 2}
+  m_PrefabInternal: {fileID: 2040089978}
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+--- !u!114 &1962802976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962802970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnButtonPress: 1
+  dialogueActive: 0
+  dialogue:
+    sentences:
+    - name: Chano
+      text: This is the fireplace where I found my collegues notice.
+    - name: Chano
+      text: I should confront A-Pose-Girl
+  effects: []
+--- !u!114 &1962802977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962802970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnButtonPress: 1
+  dialogueActive: 0
+  dialogue:
+    sentences:
+    - name: Chano
+      text: This is the fireplace where I found my collegues notice.
+    - name: Chano
+      text: I confronted A-Pose-Girl about the notice but she doesnt care. What a
+        bummer!
+  effects: []
+--- !u!1 &2013411425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2013411427}
+  - component: {fileID: 2013411426}
+  m_Layer: 0
+  m_Name: GameStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2013411426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013411425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae8243b0df97b749bc081485b43ec9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStates:
+  - areaName: commonRoom
+    states:
+    - stateLabel: Paper notice found
+      currentState: 0
+      effects:
+      - label: Fireplace Dialogue init + GameObject Paper Notice
+        affectedScript: {fileID: 1962802971}
+        affectedGameObject: {fileID: 1283245821}
+        inverseInfluence: 1
+      - label: Dialogue Fireplace after Paper Notice found
+        affectedScript: {fileID: 1962802976}
+        affectedGameObject: {fileID: 0}
+        inverseInfluence: 0
+      - label: A-Pose-Girl-Dialogue (init)
+        affectedScript: {fileID: 269397648}
+        affectedGameObject: {fileID: 0}
+        inverseInfluence: 1
+      - label: A-Pose-Girl-Dialogue (after found)
+        affectedScript: {fileID: 269397649}
+        affectedGameObject: {fileID: 0}
+        inverseInfluence: 0
+    - stateLabel: A-Pose-Girl confronted
+      currentState: 0
+      effects:
+      - label: activating new Fireplace dialogue
+        affectedScript: {fileID: 1962802977}
+        affectedGameObject: {fileID: 0}
+        inverseInfluence: 0
+      - label: Deactivating the old one
+        affectedScript: {fileID: 1962802976}
+        affectedGameObject: {fileID: 0}
+        inverseInfluence: 1
+  - areaName: 
+    states: []
+  - areaName: 
+    states: []
+  - areaName: 
+    states: []
+--- !u!4 &2013411427
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013411425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.067241, y: 7.168081, z: -23.010391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2016766494
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6903,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: effects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: outcomes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: affectedStates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.size
       value: 1
@@ -6681,11 +6925,11 @@ Prefab:
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.66
+      value: -4.671
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6713,11 +6957,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
-      value: DeskTextTrigger (2)
+      value: Fireplace-Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogue.sentences.Array.data[1]
@@ -6753,6 +6997,54 @@ Prefab:
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: triggerOnButtonPress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].name
+      value: Chano
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1].text
+      value: Oh! Look! A paper notice from my colleague.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: affectedStates.Array.data[0]
+      value: Paper notice found
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: effects.Array.data[0].stateName
+      value: Paper notice found
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: effects.Array.data[0].effect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: effects.Array.data[0].setTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2].text
+      value: 'Chano picks the notice up.
+
+        The text is evidence enough.
+
+        A-pose-girl wont be able to denie her involvement now!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6803,7 +7095,7 @@ Prefab:
     - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
         type: 2}
@@ -6961,7 +7253,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_Name
@@ -7024,50 +7316,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &2139445462
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6.653
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -22.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4457619935347804, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d530b0e6757763e469a8fe6e9e334fc3, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &2139445463 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1469159298896086, guid: d530b0e6757763e469a8fe6e9e334fc3,
-    type: 2}
-  m_PrefabInternal: {fileID: 2139445462}
