@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneMenu : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+    public static SceneMenu instance;
+    private void Awake()
+    {
+        SceneManager.LoadScene(2,LoadSceneMode.Additive);
+    }
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

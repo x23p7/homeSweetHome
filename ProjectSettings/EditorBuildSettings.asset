@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GreyBox/OverShoulder/Scenes/overShoulderCamTest.unity
-    guid: e713c61b75e57cf4381ba46cb9ae86c4
+    path: Assets/GreyBox/Scenes/essentials.unity
+    guid: bf57beff54f120e44b7d7c4f7e3242ab
   - enabled: 1
-    path: Assets/GreyBox/OverShoulder/Scenes/missingPersonRoom.unity
+    path: Assets/GreyBox/Scenes/missingPersonRoom.unity
     guid: 2ee7a3974c44123468446dfefddef8cd
   - enabled: 1
-    path: Assets/GreyBox/OverShoulder/Scenes/commonRoom.unity
+    path: Assets/GreyBox/Scenes/commonRoom.unity
     guid: 8555ab7190bd4714b9a172a5169c5146
-  - enabled: 1
-    path: Assets/GreyBox/OverShoulder/Scenes/lobby.unity
-    guid: 523a09ae14a0013468bfb6836d7a03cf
   m_configObjects: {}
