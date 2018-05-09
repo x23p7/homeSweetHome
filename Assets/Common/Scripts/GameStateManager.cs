@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStateManager : MonoBehaviour {
-    public GameState[] gameStates;
+public class GameStateManager : MonoBehaviour
+{
+    public GameState gameState;
     public static GameStateManager instance;
     void Awake()
     {
@@ -18,24 +19,26 @@ public class GameStateManager : MonoBehaviour {
     }
     private void Start()
     {
-        
-        foreach (GameState gameState in gameStates)
+        InitiateGameState();
+    }
+
+    public void InitiateGameState()
+    {
+        for (int i = gameState.states.Length; i > 0; i--)
         {
-            Debug.Log(gameState.states.Length);
-            for (int i = gameState.states.Length; i>0; i--)
-            {
-                Refresh(gameState.states[i-1]);
-            }
+            Refresh(gameState.states[i - 1]);
         }
     }
+
     public void Refresh(State targetState)
     {
         foreach (StateEffect stateEffect in targetState.effects)
         {
             if (stateEffect.inverseInfluence)
             {
-                if (stateEffect.affectedScript != null) { 
-                stateEffect.affectedScript.enabled = !targetState.currentState;
+                if (stateEffect.affectedScript != null)
+                {
+                    stateEffect.affectedScript.enabled = !targetState.currentState;
                 }
                 if (stateEffect.affectedGameObject != null)
                 {

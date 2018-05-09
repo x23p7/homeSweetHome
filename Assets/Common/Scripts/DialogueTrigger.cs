@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -37,14 +36,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerOutcome()
     {
-        currentSceneName = SceneManager.GetActiveScene().name;
-        foreach (GameState gameState in GameStateManager.instance.gameStates)
-        {
-            if (gameState.areaName == currentSceneName)
-            {
-                currentGameState = gameState;
-            }
-        }
+
+        currentGameState = GameStateManager.instance.gameState;
+
+
         foreach (Effector effect in effects)
         {
 
@@ -61,7 +56,6 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("collition with" + other.gameObject.tag);
         if (activated)
         {
             if (other.gameObject.CompareTag("Player") && triggerOnButtonPress && InputManager.instance.jumpInputDown)
