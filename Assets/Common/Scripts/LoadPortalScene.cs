@@ -12,7 +12,7 @@ public class LoadPortalScene : MonoBehaviour {
     {
         oldScene = SceneManager.GetSceneAt(SceneManager.sceneCount-1);
     }
-    IEnumerator loadSceneAsync(int sceneIndex)
+    IEnumerator LoadSceneAsync(int sceneIndex)
     {
         loadingDone = false;
         GlobalGameStateManager.instance.SaveState(GameStateManager.instance.gameState);
@@ -42,7 +42,7 @@ public class LoadPortalScene : MonoBehaviour {
     {
         if (SceneManager.sceneCount < 3)
         {
-            StartCoroutine(loadSceneAsync(nextScene));
+            StartCoroutine(LoadSceneAsync(nextScene));
         }
     }
 
@@ -50,7 +50,10 @@ public class LoadPortalScene : MonoBehaviour {
     {
         if (loadingDone && SceneManager.sceneCount > 2)
         {
-            
+         if (other.gameObject.scene == oldScene)
+            {
+                oldScene = SceneManager.GetSceneAt(SceneManager.sceneCount - 2);
+            }   
             GlobalGameStateManager.instance.LoadState(GameStateManager.instance.gameState);
             GameStateManager.instance.InitiateGameState();
             SceneManager.UnloadSceneAsync(oldScene);

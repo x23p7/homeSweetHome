@@ -24,39 +24,17 @@ public class GameStateManager : MonoBehaviour
 
     public void InitiateGameState()
     {
-        for (int i = gameState.states.Length; i > 0; i--)
+        for (int i = gameState.stateConnections.Count; i > 0; i--)
         {
-            Refresh(gameState.states[i - 1]);
+            Refresh(gameState.stateConnections[i - 1]);
         }
     }
 
-    public void Refresh(State targetState)
+    public void Refresh(StateConnection targetStateConnection)
     {
-        foreach (StateEffect stateEffect in targetState.effects)
+        foreach (MonoBehaviour script in targetStateConnection.affectedScripts)
         {
-            if (stateEffect.inverseInfluence)
-            {
-                if (stateEffect.affectedScript != null)
-                {
-                    stateEffect.affectedScript.enabled = !targetState.currentState;
-                }
-                if (stateEffect.affectedGameObject != null)
-                {
-                    stateEffect.affectedGameObject.SetActive(!targetState.currentState);
-                }
-
-            }
-            else
-            {
-                if (stateEffect.affectedScript != null)
-                {
-                    stateEffect.affectedScript.enabled = targetState.currentState;
-                }
-                if (stateEffect.affectedGameObject != null)
-                {
-                    stateEffect.affectedGameObject.SetActive(targetState.currentState);
-                }
-            }
+            script.Invoke("Refresh",0f);
         }
     }
 }

@@ -6,6 +6,5 @@ using UnityEngine;
 public class State
 {
     public string stateLabel;
-    public bool currentState;
-    public StateEffect[] effects;
+    public float currentValue;
 }

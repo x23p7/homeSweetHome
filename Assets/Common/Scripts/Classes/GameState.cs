@@ -6,5 +6,5 @@ using UnityEngine;
 public class GameState
 {
     public string areaName;
-    public State[] states;
+    public List<StateConnection> stateConnections;
 }

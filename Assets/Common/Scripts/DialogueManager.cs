@@ -50,6 +50,7 @@ public class DialogueManager : MonoBehaviour {
     {
         if (sentences.Count == 0)
         {
+            currentDialogueTrigger.TriggerOutcome();
             EndDialogue();
             return;
         }
@@ -72,7 +73,6 @@ public class DialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         InputManager.instance.jumpInputDown = false;
-        currentDialogueTrigger.TriggerOutcome();
         currentDialogueTrigger.dialogueActive = false;
         panelAnim.SetBool("panelActive", false);
         nameAnim.SetBool("textActive", false);

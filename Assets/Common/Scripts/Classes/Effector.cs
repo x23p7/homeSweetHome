@@ -6,5 +6,5 @@ using UnityEngine;
 public class Effector
 {
     public string stateName;
-    public bool setTo;
+    public float setTo;
 }
