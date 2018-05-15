@@ -6,6 +6,7 @@ public class GameObjectState : MonoBehaviour { //this script behaves just as the
     public StateEffects myActiveScenarios;
     StateConnection myStateConnection;
     bool active;
+    GameState currentGameState;
     private void Awake()
     {
         Register();
@@ -16,7 +17,7 @@ public class GameObjectState : MonoBehaviour { //this script behaves just as the
             foreach(State state in activeScenario.isActiveWhen)
             {
                 bool found = false;
-                GameState currentGameState = GameStateManager.instance.gameState;
+                currentGameState = GameStateManager.instance.gameState;
                 foreach (StateConnection stateConnection in currentGameState.stateConnections)
                 {
                     if (state.stateLabel.ToLowerInvariant() == stateConnection.stateLabel)

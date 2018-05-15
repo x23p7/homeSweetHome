@@ -2,22 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class LoadPortalScene : MonoBehaviour {
+public class LoadPortalScene : MonoBehaviour
+{
     public int nextScene;
-    Scene oldScene;
-    bool loadingDone;
+    public Scene oldScene;
+    bool loadingDone = true;
     public GameObject showstopper;
-
+    public Animator myAnim;
+    public float minWaitTime;
+    public GameObject portalCam;
+    public Material portalCamMat;
+    bool minWaitOver;
+    public Transform targetPoint;
     private void Start()
     {
-        oldScene = SceneManager.GetSceneAt(SceneManager.sceneCount-1);
+        oldScene = this.gameObject.scene;
     }
     IEnumerator LoadSceneAsync(int sceneIndex)
     {
         loadingDone = false;
         GlobalGameStateManager.instance.SaveState(GameStateManager.instance.gameState);
         GameStateManager.instance = null;
-        showstopper.SetActive(true);
         AsyncOperation loading = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
         loading.allowSceneActivation = false;
         while (loading.progress < 0.9f)
@@ -35,28 +40,59 @@ public class LoadPortalScene : MonoBehaviour {
             yield return null;
         }
         loadingDone = true;
-        showstopper.SetActive(false);
-
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (SceneManager.sceneCount < 3)
+        SetupPortal();
+        if (minWaitOver && showstopper.activeSelf)
         {
-            StartCoroutine(LoadSceneAsync(nextScene));
+            showstopper.SetActive(false);
         }
+
     }
 
-    private void OnTriggerExit(Collider other)
+    IEnumerator BlockSight()
     {
-        if (loadingDone && SceneManager.sceneCount > 2)
+        minWaitOver = false;
+        showstopper.SetActive(true);
+        yield return new WaitForSeconds(minWaitTime);
+        if (loadingDone)
         {
-         if (other.gameObject.scene == oldScene)
+            showstopper.SetActive(false);
+        }
+        minWaitOver = true;
+    }
+
+    void SetupPortal()
+    {
+        Scene targetScene = SceneManager.GetSceneAt(SceneManager.sceneCount-1);
+        foreach (GameObject rootObject in targetScene.GetRootGameObjects())
+        {
+            if (rootObject.name == "Portal-Main")
             {
-                oldScene = SceneManager.GetSceneAt(SceneManager.sceneCount - 2);
-            }   
-            GlobalGameStateManager.instance.LoadState(GameStateManager.instance.gameState);
-            GameStateManager.instance.InitiateGameState();
-            SceneManager.UnloadSceneAsync(oldScene);
+                foreach (Transform child in rootObject.GetComponentInChildren<Transform>())
+                {
+                    if (child.gameObject.name == "LandingPoint")
+                    {
+                        targetPoint = child.transform;
+                        Debug.DrawRay(targetPoint.position, Vector3.up * 3f, Color.red, 5f);
+                    }
+                }
+            }
+        }
+        Camera portalCamCam = portalCam.GetComponent<Camera>();
+        if (portalCamCam.targetTexture != null)
+        {
+            portalCamCam.targetTexture.Release();
+        }
+        portalCamCam.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        portalCamMat.mainTexture = portalCamCam.targetTexture;
+        portalCam.SetActive(true);
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (SceneManager.sceneCount < 3 && InputManager.instance.jumpInputDown && other.CompareTag("Player") && loadingDone)
+        {
+            myAnim.SetTrigger("playerAction");
+            StartCoroutine(BlockSight());
+            StartCoroutine(LoadSceneAsync(nextScene));
         }
     }
 }

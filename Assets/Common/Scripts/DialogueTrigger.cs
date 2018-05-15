@@ -39,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour
             foreach (State state in activeScenario.isActiveWhen)
             {
                 bool found = false;
-                GameState currentGameState = GameStateManager.instance.gameState;
+                currentGameState = GameStateManager.instance.gameState;
                 foreach (StateConnection stateConnection in currentGameState.stateConnections)
                 {
                     if (state.stateLabel.ToLowerInvariant() == stateConnection.stateLabel) // to minimize errors by developer input, we neglect upper case sensitivity

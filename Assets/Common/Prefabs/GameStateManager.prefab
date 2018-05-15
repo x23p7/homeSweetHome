@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4507244100875064}
   - component: {fileID: 114323825318598876}
+  - component: {fileID: 114315646026894092}
   m_Layer: 0
   m_Name: GameStateManager
   m_TagString: Untagged
@@ -40,6 +41,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114315646026894092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1233258980749820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754d2f7e8f9d8214abd440741fb4cb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalCamMat: {fileID: 2100000, guid: 29bccde32e6c6524c94c1173c9e9aa23, type: 2}
+  portalCam: {fileID: 0}
 --- !u!114 &114323825318598876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,5 +66,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState:
-    areaName: 
-    states: []
+    areaName: commonRoom
+    stateConnections: []

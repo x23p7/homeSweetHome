@@ -77,9 +77,13 @@
     <Compile Include="Assets\Common\Scripts\LoadPortalScene.cs" />
     <Compile Include="Assets\Common\Scripts\MouseAndKeyBoard.cs" />
     <Compile Include="Assets\Common\Scripts\playerMovement.cs" />
+    <Compile Include="Assets\Common\Scripts\PortalCamMatSetup.cs" />
+    <Compile Include="Assets\Common\Scripts\PortalCamMove.cs" />
     <Compile Include="Assets\Common\Scripts\PS4Input.cs" />
     <Compile Include="Assets\Common\Scripts\SceneMenu.cs" />
+    <Compile Include="Assets\Common\Scripts\Teleport_Player.cs" />
     <Compile Include="Assets\Common\Scripts\XboxInput.cs" />
+    <None Include="Assets\Common\Shader\ScreenCutoutShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Uranium/Documents/homeSweetHome/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
