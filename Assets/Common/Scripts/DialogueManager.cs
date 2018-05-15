@@ -77,6 +77,5 @@ public class DialogueManager : MonoBehaviour {
         panelAnim.SetBool("panelActive", false);
         nameAnim.SetBool("textActive", false);
         dialogueAnim.SetBool("dialogueActive", false);
-        Debug.Log("Ending Conv");
     }
 }

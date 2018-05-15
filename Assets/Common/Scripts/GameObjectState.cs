@@ -2,19 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameObjectState : MonoBehaviour {
+public class GameObjectState : MonoBehaviour { //this script behaves just as the dialogue trigger methods with the same name, but instead deactivates the attached game object instead of the very script
     public StateEffects myActiveScenarios;
     StateConnection myStateConnection;
     bool active;
     private void Awake()
     {
-        myStateConnection = new StateConnection();
-        myStateConnection.affectedScripts = new List<MonoBehaviour>();
         Register();
     }
     void Register()
     {
-        myStateConnection.affectedScripts.Add(this);
         foreach (StateEffect activeScenario in myActiveScenarios.activeScenarios) {
             foreach(State state in activeScenario.isActiveWhen)
             {
@@ -22,7 +19,7 @@ public class GameObjectState : MonoBehaviour {
                 GameState currentGameState = GameStateManager.instance.gameState;
                 foreach (StateConnection stateConnection in currentGameState.stateConnections)
                 {
-                    if (state.stateLabel == stateConnection.stateLabel)
+                    if (state.stateLabel.ToLowerInvariant() == stateConnection.stateLabel)
                     {
                         found = true;
                         bool existing = false;
@@ -41,7 +38,14 @@ public class GameObjectState : MonoBehaviour {
                 }
                 if (!found)
                 {
-                    myStateConnection.stateLabel = state.stateLabel;
+                    myStateConnection = new StateConnection
+                    {
+                        affectedScripts = new List<MonoBehaviour>()
+                        {
+                            this
+                        },
+                        stateLabel = state.stateLabel.ToLowerInvariant()
+                    };
                     currentGameState.stateConnections.Add(myStateConnection);
                 }
             }
@@ -56,7 +60,7 @@ public class GameObjectState : MonoBehaviour {
                 active = true;
                 foreach (StateConnection stateConnection in GameStateManager.instance.gameState.stateConnections)
                 {
-                    if (state.stateLabel == stateConnection.stateLabel)
+                    if (state.stateLabel.ToLowerInvariant() == stateConnection.stateLabel)
                     {
                         if (state.currentValue != stateConnection.currentValue)
                         {
