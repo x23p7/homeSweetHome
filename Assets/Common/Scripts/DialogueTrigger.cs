@@ -103,7 +103,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (activated)// we use the bool activated since script.enabled=false does not affect trigger methods (they would fire regardless)
         {
-            if (other.gameObject.CompareTag("Player") && triggerOnButtonPress && InputManager.instance.jumpInputDown)
+            if (other.gameObject.CompareTag("Player") && triggerOnButtonPress && InputManager.instance.actionInputDown)
             {
                 if (!dialogueActive) //the dialogueActive bool tells us if we already started the dialogue. if no we start it, if yes we skip to our next sentence
                 {

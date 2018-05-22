@@ -10,22 +10,34 @@ public class InputManager : MonoBehaviour {
 	public MonoBehaviour KeyBoardControles;
 	public MonoBehaviour PS4Input;
 
-	public bool jumpInputDown;
-	public bool jumpInputUp;
-	public bool jumpInputStay;
+	public bool actionInputDown;
+	public bool actionInputUp;
+	public bool actionInputStay;
+
+    public bool backStepInputDown;
+    public bool backStepInputUp;
+    public bool backStepInputStay;
+
+    public bool itemInputDown;
+    public bool itemInputUp;
+    public bool itemInputStay;
+
+    public bool vialInputDown;
+    public bool vialInputUp;
+    public bool vialInputStay;
 
 	public float horizontalInput;
 	public float verticalInput;
 	public float cameraHorizontal;
 	public float cameraVertical;
 
-	public bool shootInputUp;
-	public bool shootInputDown;
-	public bool shootInputStay;
+	public bool strongInputDown;
+	public bool strongInputUp;
+	public bool strongInputStay;
 
-	public bool aimInputUp;
-	public bool aimInputDown;
-	public bool aimInputStay;
+	public bool parryInputDown;
+	public bool parryInputUp;
+	public bool parryInputStay;
 
 	// Use this for initialization
 

@@ -70,12 +70,14 @@
     <Compile Include="Assets\Common\Scripts\Classes\StateEffects.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Common\Scripts\ElevatorScript.cs" />
     <Compile Include="Assets\Common\Scripts\GameObjectState.cs" />
     <Compile Include="Assets\Common\Scripts\GameStateManager.cs" />
     <Compile Include="Assets\Common\Scripts\GlobalGameStateManager.cs" />
     <Compile Include="Assets\Common\Scripts\InputManager.cs" />
     <Compile Include="Assets\Common\Scripts\LoadPortalScene.cs" />
     <Compile Include="Assets\Common\Scripts\MouseAndKeyBoard.cs" />
+    <Compile Include="Assets\Common\Scripts\OpenElevator.cs" />
     <Compile Include="Assets\Common\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Common\Scripts\PortalCamMatSetup.cs" />
     <Compile Include="Assets\Common\Scripts\PortalCamMove.cs" />

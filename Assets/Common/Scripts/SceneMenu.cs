@@ -14,7 +14,7 @@ public class SceneMenu : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
 		if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SceneManager.LoadScene(0);
@@ -31,5 +31,5 @@ public class SceneMenu : MonoBehaviour {
         {
             SceneManager.LoadScene(3);
         }
-    }
+    }*/
 }

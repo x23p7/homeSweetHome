@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public static CameraController instance;
     public Camera currentCam;
     public GameObject player;
     public float horizontalRotSpeed = 3;
@@ -24,11 +25,13 @@ public class CameraController : MonoBehaviour
     public float XRotReturnSpeed = 0.1f;
     playerMovement playerMoveScript;
     Rigidbody playerRig;
-    Vector3 playerHead;
+    [HideInInspector]
+    public Vector3 playerHead;
     Transform camTrans;
     float distanceVectorDelta;
     float cameraHeadVectorDelta;
-    Vector3 camPointer;
+    [HideInInspector]
+    public Vector3 camPointer;
     Collider[] colls;
     Vector3 camPos;
     float maxDistance;
@@ -40,6 +43,17 @@ public class CameraController : MonoBehaviour
     float lowestDist;
     public float pentaRayMoreThanLowest;
     // Use this for initialization
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
         rayHitDist = new List<float>();
@@ -72,7 +86,6 @@ public class CameraController : MonoBehaviour
             camTrans.RotateAround(playerHead, Vector3.up, horizontalRotSpeed * InputManager.instance.cameraHorizontal);
             playerMoveScript.currentForward = new Vector3(camTrans.forward.x, 0, camTrans.forward.z).normalized;
             playerMoveScript.currentRight = new Vector3(camTrans.right.x, 0, camTrans.right.z).normalized;
-            Debug.DrawRay(playerPos + camOffSet.y * camTrans.up, (camOffSet.x * camTrans.forward), Color.red, 5f);
         }
         if (Mathf.Abs(InputManager.instance.cameraVertical) > camUpInputMin) // vertical rotation
         {

@@ -72,7 +72,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void EndDialogue()
     {
-        InputManager.instance.jumpInputDown = false;
+        InputManager.instance.actionInputDown = false;
         currentDialogueTrigger.dialogueActive = false;
         panelAnim.SetBool("panelActive", false);
         nameAnim.SetBool("textActive", false);

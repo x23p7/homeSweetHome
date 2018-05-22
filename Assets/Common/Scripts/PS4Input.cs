@@ -11,21 +11,21 @@ public class PS4Input : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		InputManager.instance.jumpInputDown = Input.GetKeyDown (KeyCode.JoystickButton1);
-		InputManager.instance.jumpInputUp = Input.GetKeyUp (KeyCode.JoystickButton1);
-		InputManager.instance.jumpInputStay = Input.GetKey (KeyCode.JoystickButton1);
+		InputManager.instance.actionInputDown = Input.GetKeyDown (KeyCode.JoystickButton1);
+		InputManager.instance.actionInputUp = Input.GetKeyUp (KeyCode.JoystickButton1);
+		InputManager.instance.actionInputStay = Input.GetKey (KeyCode.JoystickButton1);
 
 		InputManager.instance.horizontalInput = Input.GetAxis ("HorizontalPS4");
 		InputManager.instance.verticalInput = Input.GetAxis ("VerticalPS4");
 		InputManager.instance.cameraHorizontal = Input.GetAxis ("CameraHorizontalPS4");
 		InputManager.instance.cameraVertical = Input.GetAxis ("CameraVerticalPS4");
 
-		InputManager.instance.shootInputUp = Input.GetKeyUp (KeyCode.JoystickButton5);
-		InputManager.instance.shootInputDown = Input.GetKeyDown (KeyCode.JoystickButton5);
-		InputManager.instance.shootInputStay = Input.GetKey (KeyCode.JoystickButton5);
+		InputManager.instance.strongInputDown = Input.GetKeyUp (KeyCode.JoystickButton5);
+		InputManager.instance.strongInputDown = Input.GetKeyDown (KeyCode.JoystickButton5);
+		InputManager.instance.strongInputStay = Input.GetKey (KeyCode.JoystickButton5);
 
-		InputManager.instance.aimInputUp = Input.GetKeyUp (KeyCode.JoystickButton4);
-		InputManager.instance.aimInputDown = Input.GetKeyDown (KeyCode.JoystickButton4);
-		InputManager.instance.aimInputStay = Input.GetKey (KeyCode.JoystickButton4);
+		InputManager.instance.parryInputDown = Input.GetKeyUp (KeyCode.JoystickButton4);
+		InputManager.instance.parryInputUp = Input.GetKeyDown (KeyCode.JoystickButton4);
+		InputManager.instance.parryInputStay = Input.GetKey (KeyCode.JoystickButton4);
 	}
 }

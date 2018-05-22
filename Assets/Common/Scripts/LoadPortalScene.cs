@@ -88,7 +88,7 @@ public class LoadPortalScene : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (SceneManager.sceneCount < 3 && InputManager.instance.jumpInputDown && other.CompareTag("Player") && loadingDone)
+        if (SceneManager.sceneCount < 3 && InputManager.instance.actionInputDown && other.CompareTag("Player") && loadingDone)
         {
             myAnim.SetTrigger("playerAction");
             StartCoroutine(BlockSight());
