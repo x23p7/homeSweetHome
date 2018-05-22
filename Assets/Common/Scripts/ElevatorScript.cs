@@ -118,11 +118,6 @@ public class ElevatorScript : MonoBehaviour
             yield return null;
         }
         float angularDifference = otherElevator.transform.rotation.eulerAngles.y - myElevator.transform.rotation.eulerAngles.y;
-        /*if (otherElevator.transform.rotation.eulerAngles.y + myElevator.transform.rotation.eulerAngles.y<0)
-        {
-            angularDifference *= -1;
-        }*/
-        print(angularDifference);
         GameObject playerParent = new GameObject("PlayerParent");
         CameraController camController = CameraController.instance;
         Transform currentCamTrans = camController.currentCam.transform;
@@ -143,7 +138,6 @@ public class ElevatorScript : MonoBehaviour
         myArrivalDing.Play();
         otherElevator.GetComponent<OpenElevator>().rightDoorAnim.SetTrigger("playerInteraction");
         otherElevator.GetComponent<OpenElevator>().leftDoorAnim.SetTrigger("playerInteraction");
-        print(player.transform.rotation);
         while (myArrivalDing.isPlaying)
         {
             yield return null;

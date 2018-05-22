@@ -24,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         this.activated = true;
     }
-    private void Awake()
+    private void Start()
     {
         myMesh = GetComponent<MeshRenderer>();
         myMesh.enabled = false;

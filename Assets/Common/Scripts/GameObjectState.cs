@@ -7,7 +7,7 @@ public class GameObjectState : MonoBehaviour { //this script behaves just as the
     StateConnection myStateConnection;
     bool active;
     GameState currentGameState;
-    private void Awake()
+    private void Start()
     {
         Register();
     }

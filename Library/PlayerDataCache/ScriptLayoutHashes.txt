@@ -1,10 +1,12 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Uranium/Documents/homeSweetHomeBuild150518/homeSweetHomeBuild150518.exe
+C:/Users/Uranium/Documents/homeSweetHomeBuild220518/homeSweetHomeBuild220518.exe
 SceneListBegin?
 Assets/GreyBox/Scenes/essentials.unity
-Assets/GreyBox/Scenes/missingPersonRoom.unity
+Assets/GreyBox/Scenes/lobby.unity
 Assets/GreyBox/Scenes/commonRoom.unity
+Assets/GreyBox/Scenes/missingPersonRoom.unity
+Assets/GreyBox/Scenes/lastRoom.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -18,7 +20,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-f38969dd1c2cfc0d447144479477fb04 Assembly-CSharp.dll:.InputManager
+20b0d38baee3668ba6571274dc807096 Assembly-CSharp.dll:.InputManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -123,8 +125,10 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MouseAndKeyBoard
+aea0bf5059a225d69ca6cd23d2185386 Assembly-CSharp.dll:.ElevatorScript
 65b7e2da16155fff3cb344b4f176333d Assembly-CSharp.dll:.DialogueManager
 800dbf0cf866e41ded8f4a67e5cb84d4 Assembly-CSharp.dll:.GlobalGameStateManager
+2ea1b2665f6ef1c5152f6f8f85e61066 Assembly-CSharp.dll:.OpenElevator
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -164,4 +168,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.XboxInput
 df934bf001323df77492c41a7c254003 Assembly-CSharp.dll:.PortalCamMatSetup
 47dadc633be6dfd8a19aecaf1d251eed Assembly-CSharp.dll:.playerMovement
-a79c0a77d11e0c9783ca63bd547e3263 Assembly-CSharp.dll:.CameraController
+9485f7d5d13936da5c05f9dbf85b68aa Assembly-CSharp.dll:.CameraController

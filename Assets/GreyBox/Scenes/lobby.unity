@@ -13180,6 +13180,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114323825318598876, guid: ae5d969562db08943b912a6a34435d8a,
+        type: 2}
+      propertyPath: gameState.areaName
+      value: lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233258980749820, guid: ae5d969562db08943b912a6a34435d8a, type: 2}
+      propertyPath: m_Name
+      value: GameStateManager (lobby)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae5d969562db08943b912a6a34435d8a, type: 2}
   m_IsPrefabParent: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
+    public float initiationWaitTime;
     public GameState gameState;
     public static GameStateManager instance;
     void Awake()
@@ -19,7 +20,7 @@ public class GameStateManager : MonoBehaviour
     }
     private void Start()
     {
-        InitiateGameState();
+        Invoke("InitiateGameState",initiationWaitTime);
     }
 
     public void InitiateGameState()
