@@ -68,6 +68,7 @@
     <Compile Include="Assets\Common\Scripts\Classes\StateConnection.cs" />
     <Compile Include="Assets\Common\Scripts\Classes\StateEffect.cs" />
     <Compile Include="Assets\Common\Scripts\Classes\StateEffects.cs" />
+    <Compile Include="Assets\Common\Scripts\CreateNewUV.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Common\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Common\Scripts\ElevatorScript.cs" />
