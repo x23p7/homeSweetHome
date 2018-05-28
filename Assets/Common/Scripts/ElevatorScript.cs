@@ -91,7 +91,6 @@ public class ElevatorScript : MonoBehaviour
     IEnumerator ElevatorRide()
     {
         rideComplete = false;
-        AudioSource myElevatorMusic = myElevator.GetComponent<AudioSource>();
         myMusic.Play();
         myRideSound.Play();
         SceneManager.MoveGameObjectToScene(myElevator, SceneManager.GetSceneAt(0));

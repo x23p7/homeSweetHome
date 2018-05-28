@@ -16,7 +16,6 @@ public class CameraController : MonoBehaviour
     public float camMoveSmooth = 0.5f;
     public float minCamWallDist = 0.3f;
     RaycastHit camBackWall;
-    Vector3 camOffSetOrig;
     float origXRotation;
     Vector3 origForward;
     public float camUpInputMin = 0.3f;
@@ -33,7 +32,6 @@ public class CameraController : MonoBehaviour
     [HideInInspector]
     public Vector3 camPointer;
     Collider[] colls;
-    Vector3 camPos;
     float maxDistance;
     float camDistance;
     public float camSideCheckDist = 0.5f;
@@ -61,7 +59,6 @@ public class CameraController : MonoBehaviour
         playerRig = player.GetComponent<Rigidbody>();
         camTrans = currentCam.transform;
         origXRotation = camTrans.rotation.eulerAngles.x;
-        camOffSetOrig = camOffSet;
         camTrans.position = player.transform.position + camOffSet.x * camTrans.forward + camOffSet.y * camTrans.up + camOffSet.z * camTrans.right;
         playerHead = player.transform.position + player.transform.up * player.transform.localScale.y / 2;
         camPointer = (camTrans.position - playerHead).normalized;
@@ -118,8 +115,6 @@ public class CameraController : MonoBehaviour
 
     void Translate()
     {
-        
-        camPos = camTrans.position;
         rayHitDist.Clear();
         centerDist = maxDistance;
         lowestDist = maxDistance;

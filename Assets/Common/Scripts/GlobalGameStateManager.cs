@@ -7,7 +7,6 @@ public class GlobalGameStateManager : MonoBehaviour {
     public static GlobalGameStateManager instance;
     public Camera playerCam;
     public GameObject player;
-
     void Awake()
     {
         if (instance != null)
@@ -19,6 +18,7 @@ public class GlobalGameStateManager : MonoBehaviour {
             instance = this;
         }
         savedStates = new List<GameState>();
+        savedStates.Add(new GameState { areaName = "global" });
     }
 
     public void SaveState(GameState currentRoomState)
@@ -38,7 +38,7 @@ public class GlobalGameStateManager : MonoBehaviour {
     {
           for (int i = savedStates.Count; i > 0; i--)
           {
-              if (savedStates[i - 1].areaName == targetGameState.areaName)
+              if (savedStates[i - 1].areaName == targetGameState.areaName || savedStates[i - 1].areaName == "global")
               {
                   foreach(StateConnection stateConnection in savedStates[i - 1].stateConnections)
                   {

@@ -7,4 +7,6 @@ public class Effector
 {
     public string stateName;
     public float setTo;
+    public bool addInsteadOfSet;
+    public bool global;
 }

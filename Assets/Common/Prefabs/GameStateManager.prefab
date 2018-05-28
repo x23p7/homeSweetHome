@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae8243b0df97b749bc081485b43ec9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initiationWaitTime: 3
+  initiationWaitTime: 0.01
   gameState:
     areaName: commonRoom
     stateConnections: []

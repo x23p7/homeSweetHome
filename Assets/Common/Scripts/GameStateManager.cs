@@ -33,9 +33,9 @@ public class GameStateManager : MonoBehaviour
 
     public void Refresh(StateConnection targetStateConnection)
     {
-        foreach (MonoBehaviour script in targetStateConnection.affectedScripts)
+        foreach (ObjectState stateScript in targetStateConnection.affectedScripts)
         {
-            script.Invoke("Refresh",0f);
+            stateScript.Refresh();
         }
     }
 }
