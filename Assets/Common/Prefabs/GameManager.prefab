@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114690076488102346}
   - component: {fileID: 114757554760822206}
   - component: {fileID: 114614492449679638}
+  - component: {fileID: 114865173178251122}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -71,19 +72,28 @@ MonoBehaviour:
   XboxControles: {fileID: 114045147419487490}
   KeyBoardControles: {fileID: 114376268522400148}
   PS4Input: {fileID: 114802049853707906}
-  jumpInputDown: 0
-  jumpInputUp: 0
-  jumpInputStay: 0
+  actionInputDown: 0
+  actionInputUp: 0
+  actionInputStay: 0
+  backStepInputDown: 0
+  backStepInputUp: 0
+  backStepInputStay: 0
+  itemInputDown: 0
+  itemInputUp: 0
+  itemInputStay: 0
+  vialInputDown: 0
+  vialInputUp: 0
+  vialInputStay: 0
   horizontalInput: 0
   verticalInput: 0
   cameraHorizontal: 0
   cameraVertical: 0
-  shootInputUp: 0
-  shootInputDown: 0
-  shootInputStay: 0
-  aimInputUp: 0
-  aimInputDown: 0
-  aimInputStay: 0
+  strongInputDown: 0
+  strongInputUp: 0
+  strongInputStay: 0
+  parryInputDown: 0
+  parryInputUp: 0
+  parryInputStay: 0
 --- !u!114 &114376268522400148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +142,8 @@ MonoBehaviour:
   camUpInputMin: 0.75
   maxXRotation: {x: -40, y: 40}
   XRotReturnSpeed: 0.02
+  playerHead: {x: 0, y: 0, z: 0}
+  camPointer: {x: 0, y: 0, z: 0}
   camSideCheckDist: 1
   pentaRayMoreThanLowest: 1.2
 --- !u!114 &114757554760822206
@@ -162,3 +174,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a6f44cd1b4dbc418251a85ca767131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114865173178251122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589571071618716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1915b7bc6d0904dac56da4399f1619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedStates: []
+  playerCam: {fileID: 0}
+  player: {fileID: 0}

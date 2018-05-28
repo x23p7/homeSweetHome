@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalGameStateManager : MonoBehaviour {
+public class GlobalGameStateManager : MonoBehaviour
+{
     public List<GameState> savedStates;
     public static GlobalGameStateManager instance;
     public Camera playerCam;
     public GameObject player;
+    GameState globalGameState;
+    GameState savedAreaState;
     void Awake()
     {
         if (instance != null)
@@ -23,9 +26,9 @@ public class GlobalGameStateManager : MonoBehaviour {
 
     public void SaveState(GameState currentRoomState)
     {
-        for(int i = savedStates.Count; i>0; i--)
+        for (int i = savedStates.Count; i > 0; i--)
         {
-            if (savedStates[i-1].areaName == currentRoomState.areaName)
+            if (savedStates[i - 1].areaName == currentRoomState.areaName)
             {
                 savedStates[i - 1] = currentRoomState;
                 return;
@@ -36,25 +39,55 @@ public class GlobalGameStateManager : MonoBehaviour {
 
     public void LoadState(GameState targetGameState)
     {
-          for (int i = savedStates.Count; i > 0; i--)
-          {
-              if (savedStates[i - 1].areaName == targetGameState.areaName || savedStates[i - 1].areaName == "global")
-              {
-                  foreach(StateConnection stateConnection in savedStates[i - 1].stateConnections)
-                  {
-                      for (int j = targetGameState.stateConnections.Count; j > 0; j--)
-                      {
-                          for (int k = savedStates[i-1].stateConnections.Count; k >0; k--)
-                          {
-                              if (targetGameState.stateConnections[j-1].stateLabel== savedStates[i - 1].stateConnections[k-1].stateLabel)
-                              {
-                                  targetGameState.stateConnections[j-1].currentValue = savedStates[i - 1].stateConnections[k-1].currentValue;
-                              }
-                          }
-                      }
-                  }
-                  return;
-              }
-          }
+        savedAreaState = null;
+        globalGameState = null;
+        for (int i = savedStates.Count; i > 0; i--)
+        {
+            if (savedStates[i - 1].areaName == "global")
+            {
+                globalGameState = savedStates[i - 1];
+                if (globalGameState.stateConnections == null)
+                {
+                    globalGameState.stateConnections = new List<StateConnection>();
+                }
+            }
+            if (savedStates[i - 1].areaName == targetGameState.areaName)
+            {
+                savedAreaState = savedStates[i - 1];
+                if (savedAreaState.stateConnections == null)
+                {
+                    savedAreaState.stateConnections = new List<StateConnection>();
+                }
+            }
+        }
+        if (savedAreaState == null)
+        {
+            return; // if we didn't find any previously recorded gamestate for the target room, we abort here
+        }
+        for (int a = globalGameState.stateConnections.Count; a > 0; a--)
+        {
+            for (int b = savedAreaState.stateConnections.Count; b > 0; b--)
+            {
+                if (savedAreaState.stateConnections[b - 1].stateLabel == globalGameState.stateConnections[a - 1].stateLabel)
+                {
+
+                    savedAreaState.stateConnections[b - 1].currentValue = globalGameState.stateConnections[a - 1].currentValue;
+                }
+            }
+        }
+        foreach (StateConnection stateConnection in savedAreaState.stateConnections)
+        {
+
+            for (int j = targetGameState.stateConnections.Count; j > 0; j--)
+            {
+                for (int k = savedAreaState.stateConnections.Count; k > 0; k--)
+                {
+                    if (targetGameState.stateConnections[j - 1].stateLabel == savedAreaState.stateConnections[k - 1].stateLabel)
+                    {
+                        targetGameState.stateConnections[j - 1].currentValue = savedAreaState.stateConnections[k - 1].currentValue;
+                    }
+                }
+            }
+        }
     }
 }
