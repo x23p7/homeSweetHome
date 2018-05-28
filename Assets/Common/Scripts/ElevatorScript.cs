@@ -36,6 +36,10 @@ public class ElevatorScript : MonoBehaviour
             {
                 if (sceneNames[0].ToLowerInvariant() != oldScene.name.ToLowerInvariant())
                 {
+                    if (SceneManager.sceneCount > 2)
+                    {
+                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(SceneManager.sceneCount - 1));
+                    }
                     StartCoroutine(LoadSceneAsync(1));
                     StartCoroutine(ElevatorRide());
                 }
@@ -44,6 +48,10 @@ public class ElevatorScript : MonoBehaviour
             {
                 if (sceneNames[1].ToLowerInvariant() != oldScene.name.ToLowerInvariant())
                 {
+                    if (SceneManager.sceneCount > 2)
+                    {
+                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(SceneManager.sceneCount - 1));
+                    }
                     StartCoroutine(LoadSceneAsync(2));
                     StartCoroutine(ElevatorRide());
                 }
@@ -52,6 +60,10 @@ public class ElevatorScript : MonoBehaviour
             {
                 if (sceneNames[2].ToLowerInvariant() != oldScene.name.ToLowerInvariant())
                 {
+                    if (SceneManager.sceneCount > 2)
+                    {
+                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(SceneManager.sceneCount - 1));
+                    }
                     StartCoroutine(LoadSceneAsync(3));
                     StartCoroutine(ElevatorRide());
                 }
@@ -60,6 +72,10 @@ public class ElevatorScript : MonoBehaviour
             {
                 if (sceneNames[3].ToLowerInvariant() != oldScene.name.ToLowerInvariant())
                 {
+                    if (SceneManager.sceneCount > 2)
+                    {
+                        SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(SceneManager.sceneCount - 1));
+                    }
                     StartCoroutine(LoadSceneAsync(4));
                     StartCoroutine(ElevatorRide());
                 }
