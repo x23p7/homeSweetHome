@@ -1125,6 +1125,11 @@ Prefab:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 3dc4d8af7d220774c892bcc0a0f3c940, type: 2}
+    - target: {fileID: 114592995244454888, guid: c2ebb6d72eab190498fe60d8b3aa08fd,
+        type: 2}
+      propertyPath: nextScene
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2ebb6d72eab190498fe60d8b3aa08fd, type: 2}
   m_IsPrefabParent: 0

@@ -2389,6 +2389,13 @@ MonoBehaviour:
   doorOpenTime: 5
   playerBlocker: {fileID: 1178126495540958}
   nextScene: 3
+  random: 1
+  totalSceneCount: 4
+  sceneNames:
+  - lobby
+  - commonRoom
+  - missingPersonRoom
+  - lastRoom
   showstopper: {fileID: 1619366558570758}
   portal: {fileID: 1591002470356332}
   myAnim: {fileID: 95510732291635234}
@@ -2409,7 +2416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portal: {fileID: 4635547819409572}
   loadingScript: {fileID: 114592995244454888}
-  lift: 3
 --- !u!124 &124597235218689990
 Behaviour:
   m_ObjectHideFlags: 1

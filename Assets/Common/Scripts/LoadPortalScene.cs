@@ -8,6 +8,10 @@ public class LoadPortalScene : ObjectState
     public float doorOpenTime;
     public GameObject playerBlocker;
     public int nextScene;
+    public bool random;
+    public int totalSceneCount;
+    [Tooltip ("Add all scene names BUT essentials in the same order as in build index")]
+    public List<string> sceneNames;
     public Scene oldScene;
     bool loadingDone = true;
     public GameObject showstopper;
@@ -44,6 +48,14 @@ public class LoadPortalScene : ObjectState
         loadingDone = false;
         GlobalGameStateManager.instance.SaveState(GameStateManager.instance.gameState);
         GameStateManager.instance = null;
+        if (random)
+        {
+            sceneIndex = Random.Range(1, totalSceneCount + 1);
+            while (sceneNames[sceneIndex-1].ToLowerInvariant() == oldScene.name.ToLowerInvariant())
+            {
+                sceneIndex = Random.Range(1, totalSceneCount + 1);
+            }
+        }
         AsyncOperation loading = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
         loading.allowSceneActivation = false;
         while (loading.progress < 0.9f)

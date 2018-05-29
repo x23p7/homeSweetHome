@@ -7,7 +7,6 @@ public class PortalCamMove : MonoBehaviour {
     public Transform portal;
     Transform targetPoint;
     public LoadPortalScene loadingScript;
-    public float lift;
     // Use this for initialization
     void Start()
     {
