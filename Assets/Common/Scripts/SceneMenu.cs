@@ -6,7 +6,7 @@ public class SceneMenu : MonoBehaviour {
     public static SceneMenu instance;
     private void Awake()
     {
-        SceneManager.LoadScene(2,LoadSceneMode.Additive);
+        
     }
     // Use this for initialization
     void Start () {

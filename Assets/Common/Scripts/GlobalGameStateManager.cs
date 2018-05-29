@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalGameStateManager : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class GlobalGameStateManager : MonoBehaviour
         }
         savedStates = new List<GameState>();
         savedStates.Add(new GameState { areaName = "global" });
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
 
     public void SaveState(GameState currentRoomState)
@@ -62,7 +64,8 @@ public class GlobalGameStateManager : MonoBehaviour
         }
         if (savedAreaState == null)
         {
-            return; // if we didn't find any previously recorded gamestate for the target room, we abort here
+            savedStates.Add(targetGameState);
+            savedAreaState = savedStates[savedStates.Count - 1];
         }
         for (int a = globalGameState.stateConnections.Count; a > 0; a--)
         {
