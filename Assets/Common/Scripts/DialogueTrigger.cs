@@ -7,8 +7,12 @@ public class DialogueTrigger : ObjectState
     public bool triggerOnButtonPress;
     [HideInInspector]
     public bool dialogueActive;
+    [HideInInspector]
+    public bool choicesActive;
     public Dialogue dialogue;
-    public Effector[] effects;
+    public Effector[] myEffects;
+    public bool choicesAfterDialogue;
+    public Choice[] choices;
     string currentSceneName;
     MeshRenderer myMesh;
     bool activated;
@@ -24,6 +28,22 @@ public class DialogueTrigger : ObjectState
     }
     private void Start()
     {
+        if (choices != null)
+        {
+            if (choices.Length != 4 && choices.Length > 0)
+            {
+                Choice[] oldChoices = choices;
+                choices = new Choice[4];
+                for (int i = oldChoices.Length; i > 0; i--)
+                {
+                    choices[i - 1] = oldChoices[i - 1];
+                }
+                for (int i = choices.Length; i > oldChoices.Length; i--)
+                {
+                    choices[i - 1] = new Choice { choiceLabel = "", choiceEffects = new Effector[0] };
+                }
+            }
+        }
         myMesh = GetComponent<MeshRenderer>();
         myMesh.enabled = false;
         activated = true;
@@ -35,7 +55,7 @@ public class DialogueTrigger : ObjectState
         DialogueManager.instance.StartDialogue(this, dialogue);
     }
 
-    public void TriggerOutcome() // this method is used within the dialoguemanager which calls it upon user input when the end of the dialogue is reached. the effector/s is/are declared in inspector for each dialogue trigger
+    public void TriggerOutcome(Effector[] effects) // this method is used within the dialoguemanager which calls it upon user input when the end of the dialogue is reached. the effector/s is/are declared in inspector for each dialogue trigger
     {
 
 
@@ -117,7 +137,6 @@ public class DialogueTrigger : ObjectState
 
     private void OnTriggerExit(Collider other)
     {
-        myMesh.enabled = false;
         if (dialogueActive)
         {
             DialogueManager.instance.EndDialogue();

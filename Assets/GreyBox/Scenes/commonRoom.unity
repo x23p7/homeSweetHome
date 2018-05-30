@@ -1284,6 +1284,43 @@ GameObject:
   m_PrefabParentObject: {fileID: 1847330751857986, guid: 9009fa1b42849cc4cbc34dee2d386dba,
     type: 2}
   m_PrefabInternal: {fileID: 1942739448}
+--- !u!114 &269397648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269397647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a0349a34ee39d44893fa26106bd075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myActiveScenarios:
+    activeScenarios:
+    - isActiveWhen:
+      - stateLabel: A-Pose-Girl confronted
+        currentValue: 1
+      - stateLabel: A-Pose-Girl saw you crying
+        currentValue: 1
+  scriptAffected: 1
+  gameObjectAffected: 0
+  currentGameState:
+    areaName: 
+    stateConnections: []
+  triggerOnButtonPress: 1
+  dialogueActive: 0
+  choicesActive: 0
+  dialogue:
+    sentences:
+    - name: A-Pose-Girl
+      text: What? Stop that! Seriously!
+  myEffects:
+  - stateName: A-Pose-Girl saw you crying
+    setTo: 0
+    addInsteadOfSet: 0
+    global: 0
+  choicesAfterDialogue: 0
+  choices: []
 --- !u!114 &269397649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,6 +1337,8 @@ MonoBehaviour:
     - isActiveWhen:
       - stateLabel: Paper notice found
         currentValue: 1
+      - stateLabel: A-Pose-Girl saw you crying
+        currentValue: 0
   scriptAffected: 1
   gameObjectAffected: 0
   currentGameState:
@@ -1307,17 +1346,37 @@ MonoBehaviour:
     stateConnections: []
   triggerOnButtonPress: 1
   dialogueActive: 0
+  choicesActive: 0
   dialogue:
     sentences:
     - name: A-Pose-Girl
       text: Seems you found the dooblydoo.
     - name: A-Pose-Girl
       text: I dont care TBH.
-  effects:
-  - stateName: A-Pose-Girl confronted
+  myEffects:
+  - stateName: A-Pose-girl confronted
     setTo: 1
     addInsteadOfSet: 0
     global: 0
+  choicesAfterDialogue: 1
+  choices:
+  - choiceLabel: Stay calm
+    choiceEffects: []
+    continuesDialogue: 0
+  - choiceLabel: Cry a bit
+    choiceEffects:
+    - stateName: A-Pose-Girl saw you crying
+      setTo: 1
+      addInsteadOfSet: 0
+      global: 0
+    continuesDialogue: 1
+  - choiceLabel: Activate the portals for some reason
+    choiceEffects:
+    - stateName: Portals activated
+      setTo: 1
+      addInsteadOfSet: 0
+      global: 1
+    continuesDialogue: 0
 --- !u!1001 &283422628
 Prefab:
   m_ObjectHideFlags: 0
@@ -4936,7 +4995,7 @@ Transform:
   - {fileID: 233949356}
   - {fileID: 480625445}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1283245783
 GameObject:
@@ -10344,7 +10403,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283245828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.773757, y: 0.53180885, z: 3.1625671}
+  m_LocalPosition: {x: -5.773757, y: 0.53180885, z: 3.251}
   m_LocalScale: {x: 0.0071222195, y: 0.0071222195, z: 0.0071222195}
   m_Children: []
   m_Father: {fileID: 1283245782}
@@ -13968,6 +14027,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4627649733609514, guid: 2bb4dbabfa0532b4a95d134d471a7704,
     type: 2}
   m_PrefabInternal: {fileID: 1731947694}
+--- !u!1001 &1738274762
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -177.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386629162123680, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 55633d74d249a5540b3324f57ced1176, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1748264858
 GameObject:
   m_ObjectHideFlags: 0
@@ -14889,13 +14990,16 @@ MonoBehaviour:
     stateConnections: []
   triggerOnButtonPress: 1
   dialogueActive: 0
+  choicesActive: 0
   dialogue:
     sentences:
     - name: Chano
       text: This is the fireplace where I found my collegues notice.
     - name: Chano
       text: I should confront A-Pose-Girl
-  effects: []
+  myEffects: []
+  choicesAfterDialogue: 0
+  choices: []
 --- !u!114 &1962802977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14921,6 +15025,7 @@ MonoBehaviour:
     stateConnections: []
   triggerOnButtonPress: 1
   dialogueActive: 0
+  choicesActive: 0
   dialogue:
     sentences:
     - name: Chano
@@ -14928,7 +15033,9 @@ MonoBehaviour:
     - name: Chano
       text: I confronted A-Pose-Girl about the notice but she doesnt care. What a
         bummer!
-  effects: []
+  myEffects: []
+  choicesAfterDialogue: 0
+  choices: []
 --- !u!1001 &1964111433
 Prefab:
   m_ObjectHideFlags: 0
@@ -15360,6 +15467,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
+      propertyPath: choices.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
       propertyPath: outcomes.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -15384,12 +15496,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
+      propertyPath: choices.Array.data[1].choiceEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
       propertyPath: myActiveScenarios.activeScenarios.Array.data[0].isActiveWhen.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.665
+      value: -4.711
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.y
@@ -15497,7 +15614,7 @@ Prefab:
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: dialogue.sentences.Array.data[2].text
-      value: 'Chano picks the notice up.
+      value: 'Chano looks at the notice.
 
         The text is evidence enough.
 
@@ -15530,6 +15647,36 @@ Prefab:
     - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
         type: 2}
       propertyPath: effects.Array.data[1].global
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choices.Array.data[0].choiceLabel
+      value: Leave the notice alone
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choices.Array.data[1].choiceLabel
+      value: Pick the notice up
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choices.Array.data[1].choiceEffects.Array.data[0].stateName
+      value: Paper notice found
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choices.Array.data[1].choiceEffects.Array.data[0].setTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choices.Array.data[1].continuesDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795159831240548, guid: 9009fa1b42849cc4cbc34dee2d386dba,
+        type: 2}
+      propertyPath: choicesAfterDialogue
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15660,106 +15807,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4985166205062890, guid: b4cc8de608827bb4dbe08696f236a0e7,
     type: 2}
   m_PrefabInternal: {fileID: 2042853175}
---- !u!1001 &2043290649
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224763209917863950, guid: b30b66405ba9a7a4a8ed1c11011238b9,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b30b66405ba9a7a4a8ed1c11011238b9, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2043500740
 GameObject:
   m_ObjectHideFlags: 0
@@ -15799,15 +15846,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.157999
+      value: -6.047
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.4300003
+      value: 6.316
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -177.7439
+      value: -177.881
       objectReference: {fileID: 0}
     - target: {fileID: 4663272256685562, guid: 9009fa1b42849cc4cbc34dee2d386dba, type: 2}
       propertyPath: m_LocalRotation.x

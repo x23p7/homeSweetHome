@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114376268522400148}
   - component: {fileID: 114690076488102346}
   - component: {fileID: 114757554760822206}
-  - component: {fileID: 114865173178251122}
+  - component: {fileID: 114946759199163884}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1444338c47e5e0949af5b23e9c19c514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
 --- !u!114 &114335073881561020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,6 +94,12 @@ MonoBehaviour:
   parryInputDown: 0
   parryInputUp: 0
   parryInputStay: 0
+  choiceOne: 0
+  choiceTwo: 0
+  choiceThree: 0
+  choiceFour: 0
+  disabled: 0
+  activeInputScript: {fileID: 0}
 --- !u!114 &114376268522400148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30df7c55d627a46479443b2d91b26cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
 --- !u!114 &114690076488102346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +140,7 @@ MonoBehaviour:
   XRotReturnSpeed: 0.02
   playerHead: {x: 0, y: 0, z: 0}
   camPointer: {x: 0, y: 0, z: 0}
-  camSideCheckDist: 1
+  camSideCheckDist: 0.5
   pentaRayMoreThanLowest: 1.2
 --- !u!114 &114757554760822206
 MonoBehaviour:
@@ -151,6 +159,41 @@ MonoBehaviour:
   panelAnim: {fileID: 0}
   nameAnim: {fileID: 0}
   dialogueAnim: {fileID: 0}
+  choiceTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  choiceFrameAnimators:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  choiceTextAnimators:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  choiceSpriteAnimators:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  choiceSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  xBoxColors:
+  - {r: 0.46524566, g: 0.8018868, b: 0.489891, a: 1}
+  - {r: 0.764151, g: 0.27033645, b: 0.27033645, a: 1}
+  - {r: 0.08530616, g: 0.32189012, b: 0.6698113, a: 1}
+  - {r: 0.9339623, g: 0.76758677, b: 0.17181383, a: 1}
+  PS4Colors:
+  - {r: 0.015129937, g: 0.20339903, b: 0.6415094, a: 1}
+  - {r: 0.8207547, g: 0.16647384, b: 0.16647384, a: 1}
+  - {r: 0.72220045, g: 0.29196337, b: 0.764151, a: 1}
+  - {r: 0.21444462, g: 0.745283, b: 0.36293533, a: 1}
 --- !u!114 &114802049853707906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,7 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a6f44cd1b4dbc418251a85ca767131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114865173178251122
+  disabled: 0
+--- !u!114 &114946759199163884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

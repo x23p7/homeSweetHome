@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseAndKeyBoard : MonoBehaviour {
-
+    public bool disabled;
 
 	// Use this for initialization
 	void Start () {
@@ -11,9 +11,9 @@ public class MouseAndKeyBoard : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		InputManager.instance.actionInputDown = Input.GetKeyDown (KeyCode.Space);
-		InputManager.instance.actionInputUp = Input.GetKeyUp (KeyCode.Space);
-		InputManager.instance.actionInputStay = Input.GetKey (KeyCode.Space);
+		InputManager.instance.actionInputDown = Input.GetKeyDown (KeyCode.E);
+		InputManager.instance.actionInputUp = Input.GetKeyUp (KeyCode.E);
+		InputManager.instance.actionInputStay = Input.GetKey (KeyCode.E);
 
 		InputManager.instance.horizontalInput = Input.GetAxis ("Horizontal");
 		InputManager.instance.verticalInput = Input.GetAxis ("Vertical");

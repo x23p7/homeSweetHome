@@ -9,6 +9,7 @@ public class ObjectState : MonoBehaviour
     bool active;
     public bool scriptAffected;
     public bool gameObjectAffected;
+    [HideInInspector]
     public GameState currentGameState;
     private void Start()
     {
