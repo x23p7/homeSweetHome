@@ -13015,7 +13015,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -13762,7 +13762,7 @@ Transform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1933673808}
-  m_RootOrder: 175
+  m_RootOrder: 173
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &642237524
 GameObject:
@@ -15490,7 +15490,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -16447,7 +16447,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -16805,7 +16805,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -17740,7 +17740,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -20413,14 +20413,13 @@ Transform:
   - {fileID: 174985961}
   - {fileID: 976221393}
   - {fileID: 568541136}
-  - {fileID: 1879690651}
   - {fileID: 1250456859}
   - {fileID: 1264000830}
   - {fileID: 2101283997}
   - {fileID: 512634894}
   - {fileID: 1842226982}
-  - {fileID: 1876546807}
   - {fileID: 626376856}
+  - {fileID: 1876546807}
   - {fileID: 368874838}
   - {fileID: 1883854359}
   - {fileID: 656025724}
@@ -20428,6 +20427,7 @@ Transform:
   - {fileID: 1130482353}
   - {fileID: 1799007283}
   - {fileID: 329802430}
+  - {fileID: 1879690651}
   - {fileID: 98728023}
   - {fileID: 1937764726}
   - {fileID: 1766342246}
@@ -20606,7 +20606,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
