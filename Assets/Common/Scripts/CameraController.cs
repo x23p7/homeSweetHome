@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
     Vector3 origForward;
     public float camUpInputMin = 0.3f;
     public Vector2 maxXRotation;
-    [Range (0f,1f)]
+    [Range(0f, 1f)]
     public float XRotReturnSpeed = 0.1f;
     playerMovement playerMoveScript;
     Rigidbody playerRig;
@@ -91,7 +91,7 @@ public class CameraController : MonoBehaviour
             {
                 camTrans.RotateAround(playerHead, camTrans.right, InputManager.instance.cameraVertical * verticalRotSpeed);
             }
-            if ((InputManager.instance.cameraVertical < 0 &&(
+            if ((InputManager.instance.cameraVertical < 0 && (
                 camTrans.rotation.eulerAngles.x + InputManager.instance.cameraVertical * verticalRotSpeed > origXRotation + maxXRotation.x &&
                 camTrans.rotation.eulerAngles.x + InputManager.instance.cameraVertical * verticalRotSpeed < origXRotation + maxXRotation.y) ||
                    camTrans.rotation.eulerAngles.x + InputManager.instance.cameraVertical * verticalRotSpeed > 360 + maxXRotation.x + origXRotation))
@@ -99,15 +99,15 @@ public class CameraController : MonoBehaviour
                 camTrans.RotateAround(playerHead, camTrans.right, InputManager.instance.cameraVertical * horizontalRotSpeed);
             }
         }
-         else if (origXRotation != camTrans.rotation.eulerAngles.x && playerRig.velocity.magnitude>0.1)
-         {
-             if (camTrans.rotation.eulerAngles.x < origXRotation + maxXRotation.y)
-             {
-                 camTrans.RotateAround(playerHead, camTrans.right, (origXRotation - camTrans.rotation.eulerAngles.x) * XRotReturnSpeed);
+        else if (origXRotation != camTrans.rotation.eulerAngles.x && playerRig.velocity.magnitude > 0.1)
+        {
+            if (camTrans.rotation.eulerAngles.x < origXRotation + maxXRotation.y)
+            {
+                camTrans.RotateAround(playerHead, camTrans.right, (origXRotation - camTrans.rotation.eulerAngles.x) * XRotReturnSpeed);
             }
-             else
-             {
-                 camTrans.RotateAround(playerHead, camTrans.right, (360 - camTrans.rotation.eulerAngles.x + origXRotation) * XRotReturnSpeed);
+            else
+            {
+                camTrans.RotateAround(playerHead, camTrans.right, (360 - camTrans.rotation.eulerAngles.x + origXRotation) * XRotReturnSpeed);
             }
         }
         camPointer = (camTrans.position - playerHead).normalized;
@@ -124,9 +124,9 @@ public class CameraController : MonoBehaviour
             rayHitDist.Add(camBackWall.distance - minCamWallDist);
             centerDist = camBackWall.distance - minCamWallDist;
         }
-        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance + camTrans.right*camSideCheckDist, out camBackWall, camPushMask))
+        if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance + camTrans.right * camSideCheckDist, out camBackWall, camPushMask))
         {
-            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist,0,centerDist));
+            rayHitDist.Add(Mathf.Clamp(camBackWall.distance - minCamWallDist, 0, centerDist));
         }
         if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance - camTrans.right * camSideCheckDist, out camBackWall, camPushMask))
         {
@@ -154,7 +154,7 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            camDistance = Mathf.Lerp(camDistance,maxDistance,camMoveSmooth/5f);
+            camDistance = Mathf.Lerp(camDistance, maxDistance, camMoveSmooth / 5f);
         }
         //alt
         /*if (Physics.Linecast(playerHead, playerHead + camPointer * maxDistance, out camBackWall, camPushMask))
@@ -165,6 +165,14 @@ public class CameraController : MonoBehaviour
         {
             camDistance = maxDistance;
         }*/
-        camTrans.position = Vector3.Lerp(camTrans.position,playerHead + camPointer * camDistance, camMoveSmooth);
+        camTrans.position = Vector3.Lerp(camTrans.position, playerHead + camPointer * camDistance, camMoveSmooth);
     }
+    public void ResetToPlayer()
+    {
+        playerPos = player.transform.position;
+        playerHead = playerPos + player.transform.up * player.transform.localScale.y / 2;
+        camPointer = (camTrans.position - playerHead).normalized;
+        playerMoveScript.currentForward = new Vector3(camTrans.forward.x, 0, camTrans.forward.z).normalized;
+        playerMoveScript.currentRight = new Vector3(camTrans.right.x, 0, camTrans.right.z).normalized;
     }
+}

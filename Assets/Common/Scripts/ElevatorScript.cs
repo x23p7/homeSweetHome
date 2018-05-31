@@ -145,7 +145,7 @@ public class ElevatorScript : MonoBehaviour
         playerParent.transform.RotateAround(otherElevator.transform.position, Vector3.up, angularDifference);
         player.transform.parent = null;
         currentCamTrans.parent = null;
-        camController.camPointer = (currentCamTrans.position - (player.transform.position + player.transform.up * player.transform.localScale.y / 2)).normalized;
+        camController.ResetToPlayer();
         playerMoveScript.currentForward = new Vector3(currentCamTrans.forward.x, 0, currentCamTrans.forward.z).normalized;
         playerMoveScript.currentRight = new Vector3(currentCamTrans.right.x, 0, currentCamTrans.right.z).normalized;
         myMusic.Stop();

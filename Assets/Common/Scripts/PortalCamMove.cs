@@ -28,7 +28,7 @@ public class PortalCamMove : MonoBehaviour
             float localOffSetForward = Vector3.Dot(myLandingPoint.transform.forward, playerOffSetFromPortal);
             float localOffSetRight = Vector3.Dot(myLandingPoint.transform.right, playerOffSetFromPortal);
             transform.position = targetPoint.position - localOffSetForward * targetPoint.forward - localOffSetRight * targetPoint.right + (portal.transform.position.y - GlobalGameStateManager.instance.player.transform.position.y + GlobalGameStateManager.instance.player.transform.localScale.y / 2) * Vector3.up;
-            float angularDifference = Quaternion.Angle(targetPoint.parent.rotation, portal.parent.rotation) - 180;
+            float angularDifference = targetPoint.parent.rotation.eulerAngles.y - portal.parent.rotation.eulerAngles.y + 180;
             Quaternion rotationalDifference = Quaternion.AngleAxis(angularDifference, Vector3.up);
             Vector3 newCamDir = rotationalDifference * playerCam.forward;
             transform.rotation = Quaternion.LookRotation(newCamDir, Vector3.up);

@@ -23,7 +23,7 @@ public class GlobalGameStateManager : MonoBehaviour
         }
         savedStates = new List<GameState>();
         savedStates.Add(new GameState { areaName = "global" });
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
     }
 
     public void SaveState(GameState currentRoomState)

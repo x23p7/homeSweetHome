@@ -1120,6 +1120,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 95921477825408152, guid: c2ebb6d72eab190498fe60d8b3aa08fd,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 66543d58af59f254d938a417f7598a42, type: 2}
+    - target: {fileID: 95017990673229518, guid: c2ebb6d72eab190498fe60d8b3aa08fd,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 66543d58af59f254d938a417f7598a42, type: 2}
     - target: {fileID: 20317533991176214, guid: c2ebb6d72eab190498fe60d8b3aa08fd,
         type: 2}
       propertyPath: m_TargetTexture
