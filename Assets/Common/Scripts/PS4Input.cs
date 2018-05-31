@@ -5,14 +5,14 @@ using UnityEngine;
 public class PS4Input : MonoBehaviour
 {
     public bool disabled;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
+    {
+        UpdateInput();
+    }
+
+    void UpdateInput()
     {
         if (!InputManager.instance.disabled)
         {
@@ -25,7 +25,7 @@ public class PS4Input : MonoBehaviour
             InputManager.instance.cameraHorizontal = Input.GetAxis("CameraHorizontalPS4");
             InputManager.instance.cameraVertical = Input.GetAxis("CameraVerticalPS4");
 
-            InputManager.instance.strongInputDown = Input.GetKeyUp(KeyCode.JoystickButton5);
+            InputManager.instance.strongInputUp = Input.GetKeyUp(KeyCode.JoystickButton5);
             InputManager.instance.strongInputDown = Input.GetKeyDown(KeyCode.JoystickButton5);
             InputManager.instance.strongInputStay = Input.GetKey(KeyCode.JoystickButton5);
 

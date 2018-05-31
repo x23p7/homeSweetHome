@@ -60,6 +60,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            EndDialogue();
             if (currentDialogueTrigger.choicesAfterDialogue)
             {
                 StartChoice(currentDialogueTrigger, currentDialogueTrigger.choices);
@@ -68,7 +69,6 @@ public class DialogueManager : MonoBehaviour
             {
                 currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.myEffects);
             }
-            EndDialogue();
             return;
         }
         Sentence sentence = sentences.Dequeue();
@@ -130,10 +130,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator MakeAChoice(DialogueTrigger currentDialogueTrigger)
     {
-        InputManager.instance.choiceOne = false;
-        InputManager.instance.choiceTwo = false;
-        InputManager.instance.choiceThree = false;
-        InputManager.instance.choiceFour = false;
+        InputManager.instance.Reset();
         InputManager.instance.disabled = true;
         while (!(InputManager.instance.choiceOne && currentDialogueTrigger.choices[0].choiceLabel != "" ||
             InputManager.instance.choiceTwo && currentDialogueTrigger.choices[1].choiceLabel != "" ||
@@ -142,12 +139,21 @@ public class DialogueManager : MonoBehaviour
         {
             yield return null;
         }
+        print(currentDialogueTrigger.dialogueActive);
         if (InputManager.instance.choiceOne)
         {
             currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.choices[0].choiceEffects);
             if (currentDialogueTrigger.choices[0].continuesDialogue)
             {
-                InputManager.instance.actionInputDown = true;
+                if (!currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = true;
+                    yield return new WaitForEndOfFrame();
+                }
+                if (currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = false;
+                }
             }
         }
         if (InputManager.instance.choiceTwo)
@@ -155,7 +161,17 @@ public class DialogueManager : MonoBehaviour
             currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.choices[1].choiceEffects);
             if (currentDialogueTrigger.choices[1].continuesDialogue)
             {
-                InputManager.instance.actionInputDown = true;
+
+
+                if (!currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = true;
+                    yield return new WaitForEndOfFrame();
+                }
+                if (currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = false;
+                }
             }
         }
         if (InputManager.instance.choiceThree)
@@ -163,7 +179,16 @@ public class DialogueManager : MonoBehaviour
             currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.choices[2].choiceEffects);
             if (currentDialogueTrigger.choices[3].continuesDialogue)
             {
-                InputManager.instance.actionInputDown = true;
+                if (!currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = true;
+                    yield return new WaitForEndOfFrame();
+                }
+                if (currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = false;
+                }
+
             }
         }
         if (InputManager.instance.choiceFour)
@@ -171,9 +196,19 @@ public class DialogueManager : MonoBehaviour
             currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.choices[3].choiceEffects);
             if (currentDialogueTrigger.choices[3].continuesDialogue)
             {
-                InputManager.instance.actionInputDown = true;
+
+                if (!currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = true;
+                    yield return new WaitForEndOfFrame();
+                }
+                if (currentDialogueTrigger.dialogueActive)
+                {
+                    InputManager.instance.actionInputDown = false;
+                }
             }
         }
+        InputManager.instance.disabled = false;
         foreach (Animator animator in choiceFrameAnimators)
         {
             animator.SetBool("panelActive", false);
@@ -187,6 +222,6 @@ public class DialogueManager : MonoBehaviour
             animator.SetBool("panelActive", false);
         }
         currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.myEffects);
-        InputManager.instance.disabled = false;
+
     }
 }

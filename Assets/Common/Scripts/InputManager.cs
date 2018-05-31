@@ -88,4 +88,41 @@ public class InputManager : MonoBehaviour
             activeInputScript = KeyBoardControles;
         }
     }
+
+    public void Reset()
+    {
+        actionInputDown = false;
+        actionInputUp = false;
+        actionInputStay = false;
+
+        backStepInputDown = false;
+        backStepInputUp = false;
+        backStepInputStay = false;
+
+        itemInputDown = false;
+        itemInputUp = false;
+        itemInputStay = false;
+
+        vialInputDown = false;
+        vialInputUp = false;
+        vialInputStay = false;
+
+        horizontalInput = 0;
+        verticalInput = 0;
+        cameraHorizontal = 0;
+        cameraVertical = 0;
+
+        strongInputDown = false;
+        strongInputUp = false;
+        strongInputStay = false;
+
+        parryInputDown = false;
+        parryInputUp = false;
+        parryInputStay = false;
+
+        choiceOne = false;
+        choiceTwo = false;
+        choiceThree = false;
+        choiceFour = false;
+    }
 }

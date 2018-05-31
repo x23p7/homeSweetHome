@@ -22,7 +22,7 @@ public class Teleport_Player : MonoBehaviour
             Transform currentCamTrans = CameraController.instance.currentCam.transform;
             currentCamTrans.parent = playerParent.transform;
             float angularDifference =  loadScript.targetPoint.transform.parent.rotation.eulerAngles.y - this.transform.parent.rotation.eulerAngles.y + 180;
-            playerParent.transform.position = loadScript.targetPoint.position + localForward * loadScript.targetPoint.forward + localRight * loadScript.targetPoint.right + playerTrans.localScale.y / 2.5f*Vector3.up;
+            playerParent.transform.position = loadScript.targetPoint.position + localForward * loadScript.targetPoint.forward - localRight * loadScript.targetPoint.right + playerTrans.localScale.y / 2.5f*Vector3.up;
             playerParent.transform.RotateAround(playerTrans.position,Vector3.up, angularDifference);
             playerTrans.parent = null;
             currentCamTrans.parent = null;
