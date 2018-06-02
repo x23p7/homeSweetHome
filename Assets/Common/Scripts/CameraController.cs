@@ -40,6 +40,9 @@ public class CameraController : MonoBehaviour
     float centerDist;
     float lowestDist;
     public float pentaRayMoreThanLowest;
+    public LayerMask normalView;
+    public LayerMask playerTooCloseView;
+    public float playerIgnoreDistance;
     // Use this for initialization
     void Awake()
     {
@@ -71,6 +74,7 @@ public class CameraController : MonoBehaviour
 
         Rotate();
         Translate();
+        CheckIfPlayerTooClose();
     }
 
     void Rotate()
@@ -174,5 +178,18 @@ public class CameraController : MonoBehaviour
         camPointer = (camTrans.position - playerHead).normalized;
         playerMoveScript.currentForward = new Vector3(camTrans.forward.x, 0, camTrans.forward.z).normalized;
         playerMoveScript.currentRight = new Vector3(camTrans.right.x, 0, camTrans.right.z).normalized;
+    }
+
+    public void CheckIfPlayerTooClose()
+    {
+        Vector3 distCheck = camTrans.position - playerHead;
+        if (distCheck.magnitude < playerIgnoreDistance)
+        {
+            currentCam.cullingMask = playerTooCloseView;
+        }
+        else
+        {
+            currentCam.cullingMask = normalView;
+        }
     }
 }

@@ -124,6 +124,7 @@ public class ElevatorScript : MonoBehaviour
                 otherElevator = gameObject;
             }
         }
+        MusicManager.instance.StopClip(oldScene.name, true);
         SceneManager.UnloadSceneAsync(oldScene.buildIndex);
         GlobalGameStateManager.instance.LoadState(GameStateManager.instance.gameState);
         GameStateManager.instance.InitiateGameState();
@@ -153,6 +154,7 @@ public class ElevatorScript : MonoBehaviour
         myArrivalDing.Play();
         otherElevator.GetComponent<OpenElevator>().rightDoorAnim.SetTrigger("playerInteraction");
         otherElevator.GetComponent<OpenElevator>().leftDoorAnim.SetTrigger("playerInteraction");
+        MusicManager.instance.PlayClip(otherElevator.scene.name, true);
         while (myArrivalDing.isPlaying)
         {
             yield return null;

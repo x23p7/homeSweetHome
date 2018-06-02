@@ -179,12 +179,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+    - target: {fileID: 1589571071618716, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
+      propertyPath: m_Name
+      value: GlobalGameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946759199163884, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
-      propertyPath: currentCam
+      propertyPath: playerCam
       value: 
       objectReference: {fileID: 1077580048}
-    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+    - target: {fileID: 114946759199163884, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: player
       value: 
@@ -314,25 +318,16 @@ Prefab:
       propertyPath: choiceSprites.Array.data[3]
       value: 
       objectReference: {fileID: 1804121105}
-    - target: {fileID: 1589571071618716, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
-      propertyPath: m_Name
-      value: GlobalGameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946759199163884, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
-      propertyPath: playerCam
+      propertyPath: currentCam
       value: 
       objectReference: {fileID: 1077580048}
-    - target: {fileID: 114946759199163884, guid: 3ed83429e21a8aa48aac7e09a650ef31,
+    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 1955207143}
-    - target: {fileID: 114690076488102346, guid: 3ed83429e21a8aa48aac7e09a650ef31,
-        type: 2}
-      propertyPath: camSideCheckDist
-      value: 0.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ed83429e21a8aa48aac7e09a650ef31, type: 2}
   m_IsPrefabParent: 0
