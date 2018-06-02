@@ -10,7 +10,7 @@ public class MusicManager : MonoBehaviour
 
     bool fadingIn;
     bool fadingOut;
-    float maxVol;
+    float[] maxVol;
 
     private void Awake()
     {
@@ -23,42 +23,85 @@ public class MusicManager : MonoBehaviour
             instance = this;
         }
     }
+
+    private void Start()
+    {
+        maxVol = new float[audioSources.Length];
+        for (int i = audioSources.Length; i > 0; i--)
+        {
+            maxVol[i - 1] = audioSources[i - 1].volume;
+            audioSources[i - 1].volume = 0;
+        }
+    }
+
     public void PlayClip(string clipName, bool fadeIn)
     {
-        foreach (AudioSource audioSource in audioSources)
+        for (int i = audioSources.Length; i > 0; i--)
         {
-            if (audioSource.transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
+            if (audioSources[i - 1].transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
             {
                 if (fadeIn)
                 {
-                    StartCoroutine(FadeIn(audioSource));
+                    if (!audioSources[i - 1].isPlaying)
+                    {
+                        audioSources[i - 1].Play();
+                    }
+                    StartCoroutine(FadeIn(audioSources[i - 1], maxVol[i - 1]));
                 }
                 else
                 {
-                    audioSource.Play();
+                    audioSources[i - 1].Play();
                 }
+            }
+        }
+    }
+    public void FadeUp(string clipName, float targetVolume)
+    {
+        for (int i = audioSources.Length; i > 0; i--)
+        {
+            if (audioSources[i - 1].transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
+            {
+                StartCoroutine(FadeIn(audioSources[i - 1], targetVolume));
             }
         }
     }
 
     public void StopClip(string clipName, bool fadeOut)
     {
-        foreach (AudioSource audioSource in audioSources)
+        for (int i = audioSources.Length; i > 0; i--)
         {
-            if (audioSource.transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
+            if (audioSources[i - 1].transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
             {
                 if (fadeOut)
                 {
-                    StartCoroutine(FadeOut(audioSource));
+                    StartCoroutine(FadeOut(audioSources[i - 1], maxVol[i - 1]));
                 }
                 else
                 {
-                    audioSource.Stop();
+                    audioSources[i - 1].Stop();
                 }
             }
         }
     }
 
+    public void FadeDown(string clipName, float targetVolume)
+    {
+        foreach (AudioSource audioSource in audioSources)
+        {
+            if (audioSource.transform.name.ToLowerInvariant() == clipName.ToLowerInvariant())
+            {
+                StartCoroutine(FadeOut(audioSource, targetVolume));
+            }
+        }
+    }
+
+    public void StartAll()
+    {
+        foreach (AudioSource audioSource in audioSources)
+        {
+            audioSource.Play();
+        }
+    }
     public void StopAll()
     {
         foreach (AudioSource audioSource in audioSources)
@@ -67,29 +110,28 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    IEnumerator FadeIn(AudioSource audioSource)
+    IEnumerator FadeIn(AudioSource audioSource, float targetVolume)
     {
         while (fadingOut)
         {
             yield return null;
         }
         fadingIn = true;
-        maxVol = audioSource.volume;
         audioSource.volume = 0;
-        audioSource.Play();
-        while (audioSource.volume < maxVol)
+        while (audioSource.volume < targetVolume)
         {
             print("fadingIn");
-            audioSource.volume += maxVol*(1 / fadeTimeInSeconds) * Time.deltaTime;
+            audioSource.volume += targetVolume * (1 / fadeTimeInSeconds) * Time.deltaTime;
             yield return new WaitForFixedUpdate();
-            if (audioSource.volume > maxVol)
+            if (audioSource.volume > targetVolume)
             {
-                audioSource.volume = maxVol;
+                audioSource.volume = targetVolume;
             }
         }
         fadingIn = false;
+        yield return new WaitForFixedUpdate();
     }
-    IEnumerator FadeOut(AudioSource audioSource)
+    IEnumerator FadeOut(AudioSource audioSource, float targetVolume)
     {
         while (fadingIn)
         {
@@ -99,15 +141,14 @@ public class MusicManager : MonoBehaviour
         while (audioSource.volume > 0)
         {
             print("fadingOut");
-            audioSource.volume -= maxVol* (1 / fadeTimeInSeconds) * Time.deltaTime;
+            audioSource.volume -=  targetVolume* (1 / fadeTimeInSeconds) * Time.deltaTime;
             yield return new WaitForFixedUpdate();
             if (audioSource.volume < 0)
             {
                 audioSource.volume = 0;
             }
         }
-        audioSource.Stop();
-        audioSource.volume = maxVol;
         fadingOut = false;
+        yield return new WaitForFixedUpdate();
     }
 }
