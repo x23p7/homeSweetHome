@@ -11,6 +11,8 @@ public class Teleport_Player : MonoBehaviour
     {
         if (SceneManager.sceneCount > 2)
         {
+            MusicManager.instance.StopClip(loadScript.oldScene.name,false);
+            MusicManager.instance.PlayClip(loadScript.targetPoint.gameObject.scene.name,true);
             playerTrans = GlobalGameStateManager.instance.player.transform;
             Vector3 offSet = new Vector3(playerTrans.position.x - transform.position.x, playerTrans.position.y - myLocalLandingPoint.transform.position.y, playerTrans.position.z - transform.position.z);
             float localForward = Vector3.Dot(transform.forward, offSet);
