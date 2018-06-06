@@ -15,14 +15,14 @@ public sealed class XboxInput : MonoBehaviour
     {
         if (!InputManager.instance.disabled)
         {
-            InputManager.instance.actionInputDown = Input.GetKeyDown(KeyCode.JoystickButton1);
-            InputManager.instance.actionInputUp = Input.GetKeyUp(KeyCode.JoystickButton1);
-            InputManager.instance.actionInputStay = Input.GetKey(KeyCode.JoystickButton1);
+            InputManager.instance.actionInputDown = Input.GetKeyDown(KeyCode.JoystickButton0);
+            InputManager.instance.actionInputUp = Input.GetKeyUp(KeyCode.JoystickButton0);
+            InputManager.instance.actionInputStay = Input.GetKey(KeyCode.JoystickButton0);
 
             InputManager.instance.horizontalInput = Input.GetAxis("HorizontalXBOX");
             InputManager.instance.verticalInput = Input.GetAxis("VerticalXBOX");
-            InputManager.instance.cameraHorizontal = Input.GetAxis("CameraHorizontalPS4");
-            InputManager.instance.cameraVertical = Input.GetAxis("CameraVerticalPS4");
+            InputManager.instance.cameraHorizontal = Input.GetAxis("CameraHorizontalXBOX");
+            InputManager.instance.cameraVertical = Input.GetAxis("CameraVerticalXBOX");
 
             InputManager.instance.strongInputUp = Input.GetKeyUp(KeyCode.JoystickButton5);
             InputManager.instance.strongInputDown = Input.GetKeyDown(KeyCode.JoystickButton5);
@@ -32,13 +32,13 @@ public sealed class XboxInput : MonoBehaviour
             InputManager.instance.parryInputUp = Input.GetKeyDown(KeyCode.JoystickButton4);
             InputManager.instance.parryInputStay = Input.GetKey(KeyCode.JoystickButton4);
 
-            InputManager.instance.backStepInputDown = Input.GetKeyDown(KeyCode.JoystickButton2);
-            InputManager.instance.backStepInputUp = Input.GetKeyUp(KeyCode.JoystickButton2);
-            InputManager.instance.backStepInputStay = Input.GetKey(KeyCode.JoystickButton2);
+            InputManager.instance.backStepInputDown = Input.GetKeyDown(KeyCode.JoystickButton1);
+            InputManager.instance.backStepInputUp = Input.GetKeyUp(KeyCode.JoystickButton1);
+            InputManager.instance.backStepInputStay = Input.GetKey(KeyCode.JoystickButton1);
 
-            InputManager.instance.itemInputDown = Input.GetKeyDown(KeyCode.JoystickButton0);
-            InputManager.instance.itemInputUp = Input.GetKeyUp(KeyCode.JoystickButton0);
-            InputManager.instance.itemInputStay = Input.GetKey(KeyCode.JoystickButton0);
+            InputManager.instance.itemInputDown = Input.GetKeyDown(KeyCode.JoystickButton2);
+            InputManager.instance.itemInputUp = Input.GetKeyUp(KeyCode.JoystickButton2);
+            InputManager.instance.itemInputStay = Input.GetKey(KeyCode.JoystickButton2);
 
             InputManager.instance.vialInputDown = Input.GetKeyDown(KeyCode.JoystickButton3);
             InputManager.instance.vialInputUp = Input.GetKeyUp(KeyCode.JoystickButton3);
@@ -46,9 +46,9 @@ public sealed class XboxInput : MonoBehaviour
         }
         else
         {
-            InputManager.instance.choiceOne = Input.GetKeyDown(KeyCode.JoystickButton1);
-            InputManager.instance.choiceTwo = Input.GetKeyDown(KeyCode.JoystickButton2);
-            InputManager.instance.choiceThree = Input.GetKeyDown(KeyCode.JoystickButton0);
+            InputManager.instance.choiceOne = Input.GetKeyDown(KeyCode.JoystickButton0);
+            InputManager.instance.choiceTwo = Input.GetKeyDown(KeyCode.JoystickButton1);
+            InputManager.instance.choiceThree = Input.GetKeyDown(KeyCode.JoystickButton2);
             InputManager.instance.choiceFour = Input.GetKeyDown(KeyCode.JoystickButton3);
         }
     }

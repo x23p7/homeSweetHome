@@ -139,7 +139,6 @@ public class DialogueManager : MonoBehaviour
         {
             yield return null;
         }
-        print(currentDialogueTrigger.dialogueActive);
         if (InputManager.instance.choiceOne)
         {
             currentDialogueTrigger.TriggerOutcome(currentDialogueTrigger.choices[0].choiceEffects);

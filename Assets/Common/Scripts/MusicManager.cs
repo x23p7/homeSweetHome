@@ -120,7 +120,6 @@ public class MusicManager : MonoBehaviour
         audioSource.volume = 0;
         while (audioSource.volume < targetVolume)
         {
-            print("fadingIn");
             audioSource.volume += targetVolume * (1 / fadeTimeInSeconds) * Time.deltaTime;
             yield return new WaitForFixedUpdate();
             if (audioSource.volume > targetVolume)
@@ -140,7 +139,6 @@ public class MusicManager : MonoBehaviour
         fadingOut = true;
         while (audioSource.volume > 0)
         {
-            print("fadingOut");
             audioSource.volume -=  targetVolume* (1 / fadeTimeInSeconds) * Time.deltaTime;
             yield return new WaitForFixedUpdate();
             if (audioSource.volume < 0)
